@@ -21,7 +21,7 @@ public class ProductsPageTest extends TestBase{
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();
 	
 	
-	@Test(description = "Verify newly added product is listed", priority = 8) //include retry analyzer
+	@Test(description = "Verify newly added product is listed", priority = 8) 
 	  public void addNewProduct() throws IOException  {
 		objProducts = new ProductsPage(driver);
 		objProducts.clickProducts();
@@ -50,4 +50,12 @@ public class ProductsPageTest extends TestBase{
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ADD_PRODUCT_SUCCESS);
 		extentTest.get().assignCategory("regression");
   }
+	
+	@Test(description = "Verify newly added product is deactivated successfully", priority = 9) 
+	  public void deactivateNewProduct() throws IOException  {
+		objProducts = new ProductsPage(driver);
+		String actualLabel=objProducts.deactivateNewProduct();
+		Assert.assertEquals(actualLabel, Constants.EXPECTEDLABEL);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.DEACTIVATE_PRODUCT_SUCCESS);
+	}
 }

@@ -10,4 +10,5 @@ public class Constants {
 	public static final String SEARCHINFO="Showing 1 to 1 of 1 entries";
 	public static final String SERACHINFOROLEDELETE="No matching records found";
 	public static final String ROLE="Engineer";
+	public static final String EXPECTEDLABEL="Inactive";
 }

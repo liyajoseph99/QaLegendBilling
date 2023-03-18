@@ -1,5 +1,6 @@
 package com.QaLegendBilling.Pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 public class ProductsPage {
 
 	public WebDriver driver;
+	public static String productname;
 	
 	@FindBy(xpath="//span[text()='Products']")
 	WebElement products;
@@ -36,6 +38,14 @@ public class ProductsPage {
 	WebElement searchProduct;
 	@FindBy(xpath="//div[@class='dataTables_info']")
 	WebElement searchInfo;
+	@FindBy(xpath="//input[@class='row-select']")
+	WebElement productCheckBox;
+	@FindBy(id="deactivate-selected")
+	WebElement deactivateProduct;
+	@FindBy(xpath="//button[text()='OK']")
+	WebElement confirmOK;
+	@FindBy(xpath="//span[@class='label bg-gray']")
+	WebElement inactiveLabel;
 	
 	public ProductsPage(WebDriver driver) { 					 
 		this.driver=driver;
@@ -90,8 +100,18 @@ public class ProductsPage {
 	}
 	
 	public Boolean searchProduct(String productname) {
+		this.productname=productname;
 		searchProduct.sendKeys(productname);
 		Boolean searchinfo=searchInfo.isDisplayed();
 		return searchinfo;
+	}
+	
+	public String deactivateNewProduct() {
+		productCheckBox.click();
+		deactivateProduct.click();
+		confirmOK.click();
+		searchProduct.sendKeys(productname);
+		String actualLabel=inactiveLabel.getText();
+		return actualLabel;
 	}
 }
