@@ -1,0 +1,6 @@
+com\QaLegendBilling\Listners\TestListner.class
+com\QaLegendBilling\Base\TestBase.class
+com\QaLegendBilling\Scripts\ProductsPageTest.class
+com\QaLegendBilling\Listners\ReTryAnalyzer.class
+com\QaLegendBilling\Scripts\UsersPageTest.class
+com\QaLegendBilling\Scripts\LoginTest.class
