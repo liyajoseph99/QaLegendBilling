@@ -52,10 +52,19 @@ public class ProductsPageTest extends TestBase{
   }
 	
 	@Test(description = "Verify newly added product is deactivated successfully", priority = 9) 
-	  public void deactivateNewProduct() throws IOException  {
+	  public void deactivateNewProduct() {
 		objProducts = new ProductsPage(driver);
 		String actualLabel=objProducts.deactivateNewProduct();
 		Assert.assertEquals(actualLabel, Constants.EXPECTEDLABEL);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.DEACTIVATE_PRODUCT_SUCCESS);
+	}
+	
+	@Test(description = "Verify newly added product is deactivated successfully", priority = 10) 
+	  public void deleteNewProduct() {
+		objProducts = new ProductsPage(driver);
+		boolean noRecordsActual=objProducts.deleteNewProduct(); 
+		System.out.println(noRecordsActual);
+		Assert.assertTrue(noRecordsActual);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.DELETE_PRODUCT_SUCCESS);
 	}
 }

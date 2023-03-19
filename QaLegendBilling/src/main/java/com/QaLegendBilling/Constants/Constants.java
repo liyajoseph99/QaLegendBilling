@@ -11,4 +11,5 @@ public class Constants {
 	public static final String SERACHINFOROLEDELETE="No matching records found";
 	public static final String ROLE="Engineer";
 	public static final String EXPECTEDLABEL="Inactive";
+	public static final String DELETEDALERTEXPECTED="Deleted Successfully";
 }

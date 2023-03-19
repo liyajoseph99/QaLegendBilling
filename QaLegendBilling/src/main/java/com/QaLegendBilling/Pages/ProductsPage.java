@@ -1,6 +1,5 @@
 package com.QaLegendBilling.Pages;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -46,6 +45,12 @@ public class ProductsPage {
 	WebElement confirmOK;
 	@FindBy(xpath="//span[@class='label bg-gray']")
 	WebElement inactiveLabel;
+	@FindBy(id="delete-selected")
+	WebElement deleteProduct;
+	@FindBy(xpath="//div[text()='Deleted Successfully']")
+	WebElement deletedMessage;
+	@FindBy(xpath="//td[text()='No matching records found']")
+	WebElement noRecordsFound;
 	
 	public ProductsPage(WebDriver driver) { 					 
 		this.driver=driver;
@@ -113,5 +118,15 @@ public class ProductsPage {
 		searchProduct.sendKeys(productname);
 		String actualLabel=inactiveLabel.getText();
 		return actualLabel;
+	}
+	
+	public boolean deleteNewProduct() {
+		searchProduct.sendKeys(productname);	
+		productCheckBox.click();
+		deleteProduct.click();
+		confirmOK.click();
+		searchProduct.sendKeys(productname);
+		Boolean noRecordsActual=noRecordsFound.isDisplayed();
+		return noRecordsActual;
 	}
 }

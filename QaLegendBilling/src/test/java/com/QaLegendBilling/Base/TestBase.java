@@ -1,7 +1,5 @@
 package com.QaLegendBilling.Base;
 
-import org.testng.annotations.Test;
-
 import com.QaLegendBilling.Utilities.WaitUtilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -31,7 +29,7 @@ public class TestBase {
 	public static Properties prop=null;
 	public static WebDriver driver;
 	
-  @Test
+  
   public void testBase() {
 	  
 	  try
