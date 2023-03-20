@@ -20,7 +20,7 @@ public class LoginTest extends TestBase {
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();
 	String sheet1=Constants.SHEET1;	
 	
-  @Test(enabled=false,description = "verify the login functionality,when invalid username and invalid password is given",priority = 1)
+  @Test(enabled=true,description = "verify the login functionality,when invalid username and invalid password is given",priority = 1)
   public void verifyLoginInvalidUserInvalidPassword() throws IOException {
 	  objLogin=new LoginPage(driver);
 	  String username=ExcelUtilities.getCellStringData(0, 0,sheet1);
@@ -32,7 +32,7 @@ public class LoginTest extends TestBase {
 	  extentTest.get().log(Status.PASS, ExtentLogMessage.LOGIN_FAILED_MESSAGE);
   }
   
-  @Test(enabled=false,description = "verify the login functionality,when valid username and invalid password is given",priority = 2)
+  @Test(enabled=true,description = "verify the login functionality,when valid username and invalid password is given",priority = 2)
   public void verifyLoginValidUserInvalidPassword() throws IOException {
 	  objLogin=new LoginPage(driver);
 	  String username=ExcelUtilities.getCellStringData(1, 0,sheet1);
@@ -44,7 +44,7 @@ public class LoginTest extends TestBase {
 	  extentTest.get().log(Status.PASS, ExtentLogMessage.LOGIN_FAILED_MESSAGE);
   }
   
-  @Test(enabled=false,description = "verify the login functionality,when invalid username and valid password is given",priority = 3)
+  @Test(enabled=true,description = "verify the login functionality,when invalid username and valid password is given",priority = 3)
   public void verifyLoginInvalidUserValidPassword() throws IOException {
 	  objLogin=new LoginPage(driver);
 	  String username=ExcelUtilities.getCellStringData(2, 0,sheet1);

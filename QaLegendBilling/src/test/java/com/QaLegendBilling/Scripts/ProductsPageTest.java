@@ -20,7 +20,7 @@ public class ProductsPageTest extends TestBase{
 	String sheet2=Constants.SHEET2;	
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();	
 	
-	@Test(description = "Verify newly added product is listed", priority = 8,enabled=true) 
+	@Test(description = "Verify newly added product is listed", priority = 8,enabled=true,groups = {"smoke"}) 
 	  public void addNewProduct() throws IOException  {
 		objProducts = new ProductsPage(driver);
 		objProducts.clickProducts();
@@ -48,22 +48,25 @@ public class ProductsPageTest extends TestBase{
 		Assert.assertTrue(searchInfo);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ADD_PRODUCT_SUCCESS);
 		extentTest.get().assignCategory("regression");
+		extentTest.get().assignCategory("smoke");
   }
 	
-	@Test(description = "Verify newly added product is deactivated successfully", priority = 9,enabled=true) 
+	@Test(description = "Verify newly added product is deactivated successfully", priority = 9,enabled=true,groups = {"smoke"}) 
 	  public void deactivateNewProduct() {
 		objProducts = new ProductsPage(driver);
 		String actualLabel=objProducts.deactivateNewProduct();
 		Assert.assertEquals(actualLabel, Constants.EXPECTEDLABEL);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.DEACTIVATE_PRODUCT_SUCCESS);
+		extentTest.get().assignCategory("smoke");
 	}
 	
-	@Test(description = "Verify newly added product is deleted successfully", priority = 10,enabled=true) 
+	@Test(description = "Verify newly added product is deleted successfully", priority = 10,enabled=true,groups = {"smoke"}) 
 	  public void deleteNewProduct() {
 		objProducts = new ProductsPage(driver);
 		boolean noRecordsActual=objProducts.deleteNewProduct(); 
 		System.out.println(noRecordsActual);
 		Assert.assertTrue(noRecordsActual);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.DELETE_PRODUCT_SUCCESS);
+		extentTest.get().assignCategory("smoke");
 	}
 }
