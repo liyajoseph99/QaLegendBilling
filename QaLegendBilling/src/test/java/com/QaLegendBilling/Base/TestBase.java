@@ -1,5 +1,6 @@
 package com.QaLegendBilling.Base;
 
+import com.QaLegendBilling.Constants.Constants;
 import com.QaLegendBilling.Utilities.WaitUtilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -72,7 +73,7 @@ public class TestBase {
 	  }
 	  
 	  else if(browser1.equalsIgnoreCase("gecko")) {														
-		 System.setProperty("webdriver.gecko.driver", "C:\\Drivers\\New\\geckodriver-v0.32.0-win64\\geckodriver.exe");
+		 System.setProperty(Constants.GECKOWEBDRIVER, Constants.GECKODRIVERPATH);
 		  driver=new FirefoxDriver();
 	  }
 	  
