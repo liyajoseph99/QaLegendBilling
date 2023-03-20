@@ -20,7 +20,7 @@ public class ProductsPageTest extends TestBase{
 	String sheet2=Constants.SHEET2;	
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();	
 	
-	@Test(description = "Verify newly added product is listed", priority = 8,enabled=false) 
+	@Test(description = "Verify newly added product is listed", priority = 8,enabled=true) 
 	  public void addNewProduct() throws IOException  {
 		objProducts = new ProductsPage(driver);
 		objProducts.clickProducts();
@@ -50,7 +50,7 @@ public class ProductsPageTest extends TestBase{
 		extentTest.get().assignCategory("regression");
   }
 	
-	@Test(description = "Verify newly added product is deactivated successfully", priority = 9,enabled=false) 
+	@Test(description = "Verify newly added product is deactivated successfully", priority = 9,enabled=true) 
 	  public void deactivateNewProduct() {
 		objProducts = new ProductsPage(driver);
 		String actualLabel=objProducts.deactivateNewProduct();
@@ -58,7 +58,7 @@ public class ProductsPageTest extends TestBase{
 		extentTest.get().log(Status.PASS, ExtentLogMessage.DEACTIVATE_PRODUCT_SUCCESS);
 	}
 	
-	@Test(description = "Verify newly added product is deleted successfully", priority = 10,enabled=false) 
+	@Test(description = "Verify newly added product is deleted successfully", priority = 10,enabled=true) 
 	  public void deleteNewProduct() {
 		objProducts = new ProductsPage(driver);
 		boolean noRecordsActual=objProducts.deleteNewProduct(); 

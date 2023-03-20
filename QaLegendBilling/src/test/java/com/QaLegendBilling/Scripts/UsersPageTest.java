@@ -19,7 +19,7 @@ public class UsersPageTest extends TestBase {
 	UsersPage objUsers;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();
 	
-  @Test(description = "Verify newly added user is listed", priority = 5,enabled=false,
+  @Test(description = "Verify newly added user is listed", priority = 5,enabled=true,
 		  groups = {"smoke"},
 		  retryAnalyzer = com.QaLegendBilling.Listners.ReTryAnalyzer.class) 
   public void addNewUser() throws IOException  {
@@ -45,7 +45,7 @@ public class UsersPageTest extends TestBase {
 	 extentTest.get().assignCategory("smoke");
   }
   
-  @Test(description = "Verify newly added role is listed", priority = 6,enabled=false,groups = {"regression"})
+  @Test(description = "Verify newly added role is listed", priority = 6,enabled=true,groups = {"regression"})
   public void addNewRole() throws IOException  {
 	  objUsers.clickRoles();
 	  objUsers.clickAddBtn();
@@ -57,7 +57,7 @@ public class UsersPageTest extends TestBase {
 	  extentTest.get().assignCategory("regression");
   }
   
-  @Test(description = "Verify newly added role is deleted successfully", priority = 7,enabled=false)
+  @Test(description = "Verify newly added role is deleted successfully", priority = 7,enabled=true)
   public void deleteNewRole() throws IOException  {
 	  String searchinfoDelete=objUsers.deleteRole(Constants.ROLENAME);
 	  Assert.assertEquals(searchinfoDelete, Constants.SERACHINFOROLEDELETE);

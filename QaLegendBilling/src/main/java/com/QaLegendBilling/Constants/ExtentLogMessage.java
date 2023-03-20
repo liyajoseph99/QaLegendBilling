@@ -10,4 +10,6 @@ public class ExtentLogMessage {
 	public static final String ADD_PRODUCT_SUCCESS="New Product is added successfully";
 	public static final String DEACTIVATE_PRODUCT_SUCCESS="New Product is deactivated successfully";
 	public static final String DELETE_PRODUCT_SUCCESS="New Product is deleted successfully";
+	public static final String UNIT_ADDED_SUCCESS="Unit added successfully";
+	public static final String EXPENSE_ADDED_SUCCESS="Expense added successfully";
 }

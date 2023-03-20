@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.QaLegendBilling.Constants.Constants;
+
 public class ProductsPage {
 
 	public WebDriver driver;
@@ -63,6 +65,8 @@ public class ProductsPage {
 	WebElement allowDecimal;
 	@FindBy(xpath="//button[@class='btn btn-primary']")
 	WebElement saveUnits;
+	@FindBy(xpath="//div[@class='toast-message']")
+	WebElement unitAddedMessage;
 	
 	public ProductsPage(WebDriver driver) { 					 
 		this.driver=driver;
@@ -142,13 +146,15 @@ public class ProductsPage {
 		return noRecordsActual;
 	}
 	
-	public void addUnits() {
+	public String addUnits() {
 		units.click();
 		addUnits.click();
-		unitName.sendKeys("Boxes");
-		unitShortName.sendKeys("Boxes");
+		unitName.sendKeys(Constants.UNITNAME);
+		unitShortName.sendKeys(Constants.UNITNAME);
 		Select obj=new Select(allowDecimal);
-		obj.selectByValue("1");
+		obj.selectByValue(Constants.DECIMALVALUE);
 		saveUnits.click();
+		String unitAddedMsgActual=unitAddedMessage.getText();
+		return unitAddedMsgActual;
 	}
 }

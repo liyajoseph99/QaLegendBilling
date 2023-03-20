@@ -12,4 +12,9 @@ public class Constants {
 	public static final String ROLE="Engineer";
 	public static final String EXPECTEDLABEL="Inactive";
 	public static final String DELETEDALERTEXPECTED="Deleted Successfully";
+	public static final String UNITNAME="Boxes";
+	public static final String DECIMALVALUE="1";
+	public static final String TOTALAMOUNT="1000";
+	public static final String UNITADDEDMSGEXPECTED="Unit added successfully";
+	public static final String EXPENSEADDEDMSGEXPECTED="Expense added successfully";
 }
