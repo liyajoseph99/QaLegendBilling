@@ -51,6 +51,18 @@ public class ProductsPage {
 	WebElement deletedMessage;
 	@FindBy(xpath="//td[text()='No matching records found']")
 	WebElement noRecordsFound;
+	@FindBy(xpath="//span[text()='Units']")
+	WebElement units;
+	@FindBy(xpath="//button[@class='btn btn-block btn-primary btn-modal']")
+	WebElement addUnits;
+	@FindBy(id="actual_name")
+	WebElement unitName;
+	@FindBy(id="short_name")
+	WebElement unitShortName;
+	@FindBy(id="allow_decimal")
+	WebElement allowDecimal;
+	@FindBy(xpath="//button[@class='btn btn-primary']")
+	WebElement saveUnits;
 	
 	public ProductsPage(WebDriver driver) { 					 
 		this.driver=driver;
@@ -128,5 +140,15 @@ public class ProductsPage {
 		searchProduct.sendKeys(productname);
 		Boolean noRecordsActual=noRecordsFound.isDisplayed();
 		return noRecordsActual;
+	}
+	
+	public void addUnits() {
+		units.click();
+		addUnits.click();
+		unitName.sendKeys("Boxes");
+		unitShortName.sendKeys("Boxes");
+		Select obj=new Select(allowDecimal);
+		obj.selectByValue("1");
+		saveUnits.click();
 	}
 }
