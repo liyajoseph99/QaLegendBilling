@@ -122,6 +122,7 @@ public class ProductsPage {
 	
 	public Boolean searchProduct(String productname) {
 		this.productname=productname;
+		searchProduct.clear();
 		searchProduct.sendKeys(productname);
 		Boolean searchinfo=searchInfo.isDisplayed();
 		return searchinfo;
@@ -131,6 +132,7 @@ public class ProductsPage {
 		productCheckBox.click();
 		deactivateProduct.click();
 		confirmOK.click();
+		searchProduct.clear();
 		searchProduct.sendKeys(productname);
 		String actualLabel=inactiveLabel.getText();
 		return actualLabel;

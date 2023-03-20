@@ -1,12 +1,12 @@
 com\QaLegendBilling\Utilities\WaitUtilities.class
 com\QaLegendBilling\Utilities\ExcelUtilities.class
 com\QaLegendBilling\ExtentManager\ExtentManager$1.class
-com\QaLegendBilling\Utilities\PageUtilities$DateUtility.class
 com\QaLegendBilling\Utilities\DateUtilities.class
 com\QaLegendBilling\Constants\ExtentLogMessage.class
 com\QaLegendBilling\Pages\ProductsPage.class
 com\QaLegendBilling\Constants\Constants.class
 com\QaLegendBilling\ExtentManager\ExtentManager.class
+com\QaLegendBilling\Utilities\DateUtilities$DateUtility.class
 com\QaLegendBilling\Utilities\PageUtilities.class
 com\QaLegendBilling\Pages\UsersPage.class
 com\QaLegendBilling\Utilities\RandomUtilities.class

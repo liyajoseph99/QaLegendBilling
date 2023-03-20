@@ -14,7 +14,7 @@ public class WaitUtilities {
 	}
 	
 	public static void explicitWait(WebDriver driver,WebElement element) {
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(25));  //explicit wait
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(25));  
 		wait.until(ExpectedConditions.elementToBeClickable(element));     
 	} 
 }

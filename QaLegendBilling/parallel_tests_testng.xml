@@ -8,13 +8,12 @@
 	<parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.QaLegendBilling.Scripts.LoginTest"/>
-      <class name="com.QaLegendBilling.Scripts.UsersPageTest"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test2">
 	<parameter name="browser" value="gecko"></parameter>
     <classes>
-      <class name="com.QaLegendBilling.Scripts.ProductsExpenseTest"/>
+      <class name="com.QaLegendBilling.Base.TestBase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
