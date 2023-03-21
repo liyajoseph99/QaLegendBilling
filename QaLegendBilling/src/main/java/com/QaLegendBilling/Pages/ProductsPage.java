@@ -143,6 +143,7 @@ public class ProductsPage {
 		productCheckBox.click();
 		deleteProduct.click();
 		confirmOK.click();
+		searchProduct.clear();
 		searchProduct.sendKeys(productname);
 		Boolean noRecordsActual=noRecordsFound.isDisplayed();
 		return noRecordsActual;
