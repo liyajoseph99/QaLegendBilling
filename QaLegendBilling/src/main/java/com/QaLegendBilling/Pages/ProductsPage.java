@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.QaLegendBilling.Constants.Constants;
+import com.QaLegendBilling.Utilities.WaitUtilities;
 
 public class ProductsPage {
 
@@ -74,10 +75,12 @@ public class ProductsPage {
 	}
 	
 	public void clickProducts() {
+		WaitUtilities.explicitWait(driver, products);
 		products.click();
 	}
 	
 	public void clickListProducts() {
+		WaitUtilities.explicitWait(driver, listProducts);
 		listProducts.click();
 	}
 	

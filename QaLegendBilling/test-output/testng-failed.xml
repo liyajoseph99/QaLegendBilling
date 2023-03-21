@@ -13,6 +13,8 @@
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="deleteNewProduct"/>
+          <include name="addNewProduct"/>
+          <include name="deactivateNewProduct"/>
         </methods>
       </class> <!-- com.QaLegendBilling.Scripts.ProductsPageTest -->
     </classes>
