@@ -12,9 +12,7 @@
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="afterTest"/>
-          <include name="deleteNewProduct"/>
-          <include name="addNewProduct"/>
-          <include name="deactivateNewProduct"/>
+          <include name="verifyAddingNewProduct"/>
         </methods>
       </class> <!-- com.QaLegendBilling.Scripts.ProductsPageTest -->
     </classes>

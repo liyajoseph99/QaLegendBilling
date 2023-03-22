@@ -16,9 +16,9 @@ public class ExpensePageTest extends TestBase{
 	ExpensesPage objExpenses;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();
 	
-  @Test(description = "Verify newly added expense is listed", priority = 13, 
+  @Test(description = "Verify newly added expense is listed", priority = 5, 
 		  groups = {"smoke"}) 
-  public void addExpenses()  {
+  public void verifyAddingNewExpenses()  {
 	  objExpenses = new ExpensesPage(driver);
 	  objExpenses.clickExpenses();
 	  String expenseAddMsgActual=objExpenses.addExpenses();

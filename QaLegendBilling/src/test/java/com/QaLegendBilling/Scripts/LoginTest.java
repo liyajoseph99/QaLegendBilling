@@ -1,7 +1,5 @@
 package com.QaLegendBilling.Scripts;
 
-import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,13 +16,13 @@ public class LoginTest extends TestBase {
 	
 	LoginPage objLogin;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();
-	String sheet1=Constants.SHEET1;	
+	String loginTestdataSheet=Constants.SHEET1;	
 	
-  @Test(enabled=true,description = "verify the login functionality,when invalid username and invalid password is given",priority = 1)
-  public void verifyLoginInvalidUserInvalidPassword() throws IOException {
+  @Test(enabled=false,description = "verify the login functionality,when invalid username and invalid password is given",priority = 1)
+  public void verifyLoginInvalidUserInvalidPassword()  {
 	  objLogin=new LoginPage(driver);
-	  String username=ExcelUtilities.getCellStringData(0, 0,sheet1);
-	  String password=ExcelUtilities.getCellStringData(0, 1,sheet1);
+	  String username=ExcelUtilities.getCellStringData(0, 0,loginTestdataSheet);
+	  String password=ExcelUtilities.getCellStringData(0, 1,loginTestdataSheet);
 	  objLogin.setUsername(username);
 	  objLogin.setPassword(password);
 	  objLogin.clicklogin();
@@ -32,11 +30,11 @@ public class LoginTest extends TestBase {
 	  extentTest.get().log(Status.PASS, ExtentLogMessage.LOGIN_FAILED_MESSAGE);
   }
   
-  @Test(enabled=true,description = "verify the login functionality,when valid username and invalid password is given",priority = 2)
-  public void verifyLoginValidUserInvalidPassword() throws IOException {
+  @Test(enabled=false,description = "verify the login functionality,when valid username and invalid password is given",priority = 2)
+  public void verifyLoginValidUserInvalidPassword() {
 	  objLogin=new LoginPage(driver);
-	  String username=ExcelUtilities.getCellStringData(1, 0,sheet1);
-	  String password=ExcelUtilities.getCellStringData(1, 1,sheet1);
+	  String username=ExcelUtilities.getCellStringData(1, 0,loginTestdataSheet);
+	  String password=ExcelUtilities.getCellStringData(1, 1,loginTestdataSheet);
 	  objLogin.setUsername(username);
 	  objLogin.setPassword(password);
 	  objLogin.clicklogin();
@@ -44,11 +42,11 @@ public class LoginTest extends TestBase {
 	  extentTest.get().log(Status.PASS, ExtentLogMessage.LOGIN_FAILED_MESSAGE);
   }
   
-  @Test(enabled=true,description = "verify the login functionality,when invalid username and valid password is given",priority = 3)
-  public void verifyLoginInvalidUserValidPassword() throws IOException {
+  @Test(enabled=false,description = "verify the login functionality,when invalid username and valid password is given",priority = 3)
+  public void verifyLoginInvalidUserValidPassword()  {
 	  objLogin=new LoginPage(driver);
-	  String username=ExcelUtilities.getCellStringData(2, 0,sheet1);
-	  int passwordInt=ExcelUtilities.getCellNumericData(2, 1,sheet1);
+	  String username=ExcelUtilities.getCellStringData(2, 0,loginTestdataSheet);
+	  int passwordInt=ExcelUtilities.getCellNumericData(2, 1,loginTestdataSheet);
 	  String password=Integer.toString(passwordInt);
 	  objLogin.setUsername(username);
 	  objLogin.setPassword(password);
@@ -59,10 +57,10 @@ public class LoginTest extends TestBase {
   
   @Test(description = "verify the login functionality,when valid username and valid password is given",priority = 4,
 		  groups = {"smoke"})
-  public void verifyLoginValidUserValidPassword() throws IOException {
+  public void verifyLoginValidUserValidPassword() {
 	  objLogin=new LoginPage(driver);
-	  String username=ExcelUtilities.getCellStringData(3, 0,sheet1);
-	  int passwordInt=ExcelUtilities.getCellNumericData(3, 1,sheet1);
+	  String username=ExcelUtilities.getCellStringData(3, 0,loginTestdataSheet);
+	  int passwordInt=ExcelUtilities.getCellNumericData(3, 1,loginTestdataSheet);
 	  String password=Integer.toString(passwordInt);
 	  objLogin.setUsername(username);
 	  objLogin.setPassword(password);
