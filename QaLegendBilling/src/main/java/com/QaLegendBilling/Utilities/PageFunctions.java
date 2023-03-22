@@ -4,11 +4,13 @@ import org.openqa.selenium.WebDriver;
 
 import com.QaLegendBilling.Constants.Constants;
 import com.QaLegendBilling.Pages.ProductsPage;
+import com.QaLegendBilling.Pages.UsersPage;
 
 public class PageFunctions {
 	
 	public WebDriver driver;
 	ProductsPage objProducts;
+	UsersPage objUsers;
 	String productTestdataSheet=Constants.SHEET2;	
 	
 	public PageFunctions(WebDriver driver) { 					 
@@ -30,5 +32,25 @@ public class PageFunctions {
 		objProducts.setIncTax(Integer.toString(ExcelUtilities.getCellNumericData(1, 6,productTestdataSheet)));
 		objProducts.clickSave();
 		return productname;
+	}
+	
+	public String usersPageNewProductFunctions() {
+		 objUsers=new UsersPage(driver);
+		 objUsers.clickUserManagement();
+		 objUsers.clickUsers();
+		 objUsers.clickAddBtn();
+		 String firstname=RandomUtilities.getfName();
+		 String email=RandomUtilities.getRandomEmail();
+		 String role=Constants.ROLE;
+		 String username=RandomUtilities.getusername();
+		 String password=RandomUtilities.getpassword();
+		 objUsers.setFirstName(firstname);
+		 objUsers.setEmail(email);
+		 objUsers.setRole(role);
+		 objUsers.setUserName(username);
+		 objUsers.setPassword(password);
+		 objUsers.setConfirmPassword(password);
+		 objUsers.saveNewUser();
+		 return email;
 	}
 }

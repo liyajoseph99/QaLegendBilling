@@ -36,7 +36,7 @@ public class TestBase {
 	  try
 	  {
 		prop=new Properties();
-		FileInputStream ip=new FileInputStream(System.getProperty("user.dir")+ "\\src\\main\\resources"+ "\\config.properties"); //path of the file config.properties
+		FileInputStream ip=new FileInputStream(System.getProperty("user.dir")+ Constants.CONFIGPROPPATH); //path of the file config.properties
 		prop.load(ip);
 	  }
 	  catch(FileNotFoundException e)
@@ -53,7 +53,7 @@ public class TestBase {
   public void afterMethod(ITestResult r) throws IOException {
 	  if(ITestResult.SUCCESS==r.getStatus()) {
 			  File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			  FileUtils.copyFile(f, new File("C:\\Users\\ASUS\\Desktop\\screenshots\\"+r.getName()+".jpeg"));
+			  FileUtils.copyFile(f, new File(Constants.SCREENSHOTPATH+r.getName()+Constants.SCREENSHOTFORMAT));
 		  }
   }
   
@@ -80,7 +80,8 @@ public class TestBase {
 	  driver.manage().window().maximize();
 	  WaitUtilities.implicitWait(driver);
 	  
-	  String baseUrl=prop.getProperty("url");												
+	  String baseUrl=prop.getProperty("url");	
+	 // driver = DriverFactory.testInitialization(browser1);
 	  driver.get(baseUrl);
   }
 

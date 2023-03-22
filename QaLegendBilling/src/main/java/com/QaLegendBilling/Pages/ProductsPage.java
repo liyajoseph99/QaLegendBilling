@@ -9,8 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 import com.QaLegendBilling.Constants.Constants;
 import com.QaLegendBilling.Utilities.WaitUtilities;
 
-import io.opentelemetry.exporter.logging.SystemOutLogExporter;
-
 public class ProductsPage {
 
 	public WebDriver driver;

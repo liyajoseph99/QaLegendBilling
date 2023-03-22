@@ -10,5 +10,6 @@ com\QaLegendBilling\Utilities\DateUtilities$DateUtility.class
 com\QaLegendBilling\Utilities\PageUtilities.class
 com\QaLegendBilling\Pages\UsersPage.class
 com\QaLegendBilling\Utilities\RandomUtilities.class
+com\QaLegendBilling\Utilities\PageFunctions.class
 com\QaLegendBilling\Pages\LoginPage.class
 com\QaLegendBilling\Pages\ExpensesPage.class

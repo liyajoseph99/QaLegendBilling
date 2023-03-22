@@ -1,7 +1,5 @@
 package com.QaLegendBilling.Scripts;
 
-import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,12 +8,13 @@ import com.QaLegendBilling.Constants.Constants;
 import com.QaLegendBilling.Constants.ExtentLogMessage;
 import com.QaLegendBilling.Listners.TestListner;
 import com.QaLegendBilling.Pages.UsersPage;
-import com.QaLegendBilling.Utilities.RandomUtilities;
+import com.QaLegendBilling.Utilities.PageFunctions;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class UsersPageTest extends TestBase {
 	
+	PageFunctions objUserspage;
 	UsersPage objUsers;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();
 	
@@ -23,22 +22,9 @@ public class UsersPageTest extends TestBase {
 		  groups = {"smoke"},
 		  retryAnalyzer = com.QaLegendBilling.Listners.ReTryAnalyzer.class) 
   public void verifyAddingNewUser()  {
+	 objUserspage = new PageFunctions(driver);
+	 String email=objUserspage.usersPageNewProductFunctions();
 	 objUsers = new UsersPage(driver);
-	 objUsers.clickUserManagement();
-	 objUsers.clickUsers();
-	 objUsers.clickAddBtn();
-	 String firstname=RandomUtilities.getfName();
-	 String email=RandomUtilities.getRandomEmail();
-	 String role=Constants.ROLE;
-	 String username=RandomUtilities.getusername();
-	 String password=RandomUtilities.getpassword();
-	 objUsers.setFirstName(firstname);
-	 objUsers.setEmail(email);
-	 objUsers.setRole(role);
-	 objUsers.setUserName(username);
-	 objUsers.setPassword(password);
-	 objUsers.setConfirmPassword(password);
-	 objUsers.saveNewUser();
 	 Boolean searchInfo=objUsers.searchUser(email);
 	 Assert.assertTrue(searchInfo);
 	 extentTest.get().log(Status.PASS, ExtentLogMessage.ADD_USER_SUCCESS);
