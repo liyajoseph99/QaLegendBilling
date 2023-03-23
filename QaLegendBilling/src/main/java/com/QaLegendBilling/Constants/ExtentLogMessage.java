@@ -12,4 +12,6 @@ public class ExtentLogMessage {
 	public static final String DELETE_PRODUCT_SUCCESS="New Product is deleted successfully";
 	public static final String UNIT_ADDED_SUCCESS="Unit added successfully";
 	public static final String EXPENSE_ADDED_SUCCESS="Expense added successfully";
+	public static final String EXPENSE_LISTED_SUCCESS="Expense listed successfully";
+	public static final String UPDATE_CATEGORY_CODE_SUCCESS="Expense Category Code is updated successfully";
 }

@@ -23,4 +23,5 @@ public class Constants {
 	public static final String TOTALAMOUNT="1000";
 	public static final String UNITADDEDMSGEXPECTED="Unit added successfully";
 	public static final String EXPENSEADDEDMSGEXPECTED="Expense added successfully";
+	public static final String LISTEXPENSEPAGE="50";
 }

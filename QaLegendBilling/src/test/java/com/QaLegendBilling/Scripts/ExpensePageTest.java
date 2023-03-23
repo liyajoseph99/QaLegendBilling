@@ -31,6 +31,19 @@ public class ExpensePageTest extends TestBase{
 		  groups = {"smoke"}) 
   public void verifyPaginationWhenNewExpenseIsAdded()  {
 	  objExpenses = new ExpensesPage(driver);
-	  objExpenses.ListExpenses();
+	  boolean totalExpenseIsDisplayedActual=objExpenses.ListExpenses();
+	  Assert.assertTrue(totalExpenseIsDisplayedActual);
+	  extentTest.get().log(Status.PASS, ExtentLogMessage.EXPENSE_LISTED_SUCCESS);
+	  extentTest.get().assignCategory("smoke");
+  }
+  
+  @Test(description = "Verify the expense category is updated successfully", priority = 7, dependsOnMethods = "verifyPaginationWhenNewExpenseIsAdded",
+		  groups = {"smoke"}) 
+  public void verifyExpenseCategoryUpdation()  {
+	  objExpenses = new ExpensesPage(driver);
+	  boolean updateSuccessMsgIsDisplayed=objExpenses.updateExpenseCategory();
+	  Assert.assertTrue(updateSuccessMsgIsDisplayed);
+	  extentTest.get().log(Status.PASS, ExtentLogMessage.UPDATE_CATEGORY_CODE_SUCCESS);
+	  extentTest.get().assignCategory("smoke");
   }
 }

@@ -3,6 +3,7 @@ package com.QaLegendBilling.Utilities;
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,5 +43,11 @@ public class PageUtilities {
 	{
 		Select obj=new Select(element);
 		return obj;
+	}
+	
+	public static void scrollToTheElement(WebDriver driver, WebElement element)
+	{
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true)", element);
 	}
 }

@@ -28,6 +28,20 @@ public class ExpensesPage {
 	WebElement expenseAddedMessage;
 	@FindBy(xpath="//select[@name='expense_table_length']")
 	WebElement expenseEntryList;
+	@FindBy(xpath="//strong[text()='Total:']")
+	WebElement totalExpense;
+	@FindBy(id="footer_total_due")
+	WebElement totalExpenseInFigure;
+	@FindBy(xpath="//a[text()='Expense Categories']")
+	WebElement expenseCategories;
+	@FindBy(xpath="//*[@id=\"expense_category_table\"]/tbody/tr[1]/td[3]/button[1]")
+	WebElement editExpenseCategory;
+	@FindBy(id="code")
+	WebElement categoryCode;
+	@FindBy(xpath="//button[@class='btn btn-primary']")
+	WebElement updateCategoryCode;
+	@FindBy(xpath="//div[text()='Expense category updated successfully']")
+	WebElement updateSuccessMsg;
 	
 	public ExpensesPage(WebDriver driver) { 					 
 		this.driver=driver;
@@ -49,9 +63,22 @@ public class ExpensesPage {
 		return expenseAddMsgActual;
 	}
 	
-	public void ListExpenses() {
+	public boolean ListExpenses() {
 		Select obj=PageUtilities.selectClassDropdown(driver,expenseEntryList);
-		obj.selectByVisibleText("50");
+		obj.selectByVisibleText(Constants.LISTEXPENSEPAGE);
+		PageUtilities.scrollToTheElement(driver,totalExpenseInFigure);
+		Boolean totalExpenseIsDisplayedActual=totalExpenseInFigure.isDisplayed();
+		return totalExpenseIsDisplayedActual;
+	}
+	
+	public boolean updateExpenseCategory() {
+		expenseCategories.click();
+		editExpenseCategory.click();
+		categoryCode.clear();
+		categoryCode.sendKeys("05");
+		updateCategoryCode.click();
+		Boolean updateSuccessMsgIsDisplayed=updateSuccessMsg.isDisplayed();
+		return updateSuccessMsgIsDisplayed;
 	}
 	
 }

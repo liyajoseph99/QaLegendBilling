@@ -18,7 +18,7 @@ public class UsersPageTest extends TestBase {
 	UsersPage objUsers;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();
 	
-  @Test(description = "Verify newly added user is listed", priority = 6,enabled=true,
+  @Test(description = "Verify newly added user is listed", priority = 8,enabled=true,
 		  groups = {"smoke"},
 		  retryAnalyzer = com.QaLegendBilling.Listners.ReTryAnalyzer.class) 
   public void verifyAddingNewUser()  {
@@ -31,7 +31,7 @@ public class UsersPageTest extends TestBase {
 	 extentTest.get().assignCategory("smoke");
   }
   
-  @Test(description = "Verify newly added role is listed", priority = 7,enabled=true,groups = {"regression"})
+  @Test(description = "Verify newly added role is listed", priority = 9,enabled=true,groups = {"regression"})
   public void verifyAddingNewRole()  {
 	  objUsers.clickRoles();
 	  objUsers.clickAddBtn();
@@ -43,7 +43,7 @@ public class UsersPageTest extends TestBase {
 	  extentTest.get().assignCategory("regression");
   }
   
-  @Test(description = "Verify newly added role is deleted successfully", priority = 8,enabled=true,groups = {"regression"})
+  @Test(description = "Verify newly added role is deleted successfully", priority = 10,enabled=true,groups = {"regression"})
   public void verifyDeletingNewRole() {
 	  String searchinfoDelete=objUsers.deleteRole(Constants.ROLENAME);
 	  Assert.assertEquals(searchinfoDelete, Constants.SERACHINFOROLEDELETE);

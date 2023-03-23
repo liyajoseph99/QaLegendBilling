@@ -18,7 +18,7 @@ public class ProductsPageTest extends TestBase{
 	ProductsPage objProducts;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();	
 	
-	@Test(description = "Verify newly added product is listed", priority = 9,enabled=true,groups = {"smoke"}) 
+	@Test(description = "Verify newly added product is listed", priority = 11,enabled=true,groups = {"smoke"}) 
 	  public void verifyAddingNewProduct()  {
 		objProductspage = new PageFunctions(driver);
 		String productname=objProductspage.productPageAddNewProductFunctions();
@@ -29,7 +29,7 @@ public class ProductsPageTest extends TestBase{
 		extentTest.get().assignCategory("smoke");
   }
 	
-	@Test(description = "Verify newly added product is deactivated successfully", priority = 10,enabled=true,groups = {"smoke"}) 
+	@Test(description = "Verify newly added product is deactivated successfully", priority = 12,enabled=true,groups = {"smoke"}) 
 	  public void verifyDeactivatingNewProduct() {
 		objProducts = new ProductsPage(driver);
 		String actualLabel=objProducts.deactivateNewProduct();
@@ -38,7 +38,7 @@ public class ProductsPageTest extends TestBase{
 		extentTest.get().assignCategory("smoke");
 	}
 	
-	@Test(description = "Verify newly added product is deleted successfully", priority = 11,enabled=true,groups = {"smoke"}) 
+	@Test(description = "Verify newly added product is deleted successfully", priority = 13,enabled=true,groups = {"smoke"}) 
 	  public void verifyDeletingNewProduct() {
 		objProducts = new ProductsPage(driver);
 		boolean noRecordsActual=objProducts.deleteNewProduct(); 
@@ -47,7 +47,7 @@ public class ProductsPageTest extends TestBase{
 		extentTest.get().assignCategory("smoke");
 	}
 	
-	  @Test(description = "Verify newly added unit is listed", priority = 12,groups = {"smoke"}) 
+	  @Test(description = "Verify newly added unit is listed", priority = 14,groups = {"smoke"}) 
 	  public void addUnits()  {
 		objProducts = new ProductsPage(driver);
 		String unitAddedMsgActual=objProducts.addUnits();
