@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.QaLegendBilling.Constants.Constants;
+import com.QaLegendBilling.Utilities.PageUtilities;
 import com.QaLegendBilling.Utilities.WaitUtilities;
 
 public class ProductsPage {
@@ -75,12 +76,12 @@ public class ProductsPage {
 	}
 	
 	public void clickProducts() {
-		WaitUtilities.explicitWait(driver, products);
+		WaitUtilities.waitForElementTobeClickable(driver, products);
 		products.click();
 	}
 	
 	public void clickListProducts() {
-		WaitUtilities.explicitWait(driver, listProducts);
+		WaitUtilities.waitForElementTobeClickable(driver, listProducts);
 		listProducts.click();
 	}
 	
@@ -93,17 +94,17 @@ public class ProductsPage {
 	}
 	
 	public void setBrand(String brandname) {
-		Select obj=new Select(brand);
+		Select obj=PageUtilities.selectClassDropdown(driver,brand);
 		obj.selectByVisibleText(brandname);
 	}
 	
 	public void setUnit(String unitname) {
-		Select obj=new Select(unit);
+		Select obj=PageUtilities.selectClassDropdown(driver,unit);
 		obj.selectByVisibleText(unitname);
 	}
 	
 	public void setCategory(String categoryname) {
-		Select obj=new Select(category);
+		Select obj=PageUtilities.selectClassDropdown(driver,category);
 		obj.selectByVisibleText(categoryname);
 	}
 	
@@ -157,7 +158,7 @@ public class ProductsPage {
 		addUnits.click();
 		unitName.sendKeys(Constants.UNITNAME);
 		unitShortName.sendKeys(Constants.UNITNAME);
-		Select obj=new Select(allowDecimal);
+		Select obj=PageUtilities.selectClassDropdown(driver,allowDecimal);
 		obj.selectByValue(Constants.DECIMALVALUE);
 		saveUnits.click();
 		String unitAddedMsgActual=unitAddedMessage.getText();

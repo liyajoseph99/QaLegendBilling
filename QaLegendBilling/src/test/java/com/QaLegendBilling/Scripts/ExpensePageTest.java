@@ -26,4 +26,11 @@ public class ExpensePageTest extends TestBase{
 	  extentTest.get().log(Status.PASS, ExtentLogMessage.EXPENSE_ADDED_SUCCESS);
 	  extentTest.get().assignCategory("smoke");
   }
+  
+  @Test(description = "Verify newly added expense is listed", priority = 6, dependsOnMethods = "verifyAddingNewExpenses",
+		  groups = {"smoke"}) 
+  public void verifyPaginationWhenNewExpenseIsAdded()  {
+	  objExpenses = new ExpensesPage(driver);
+	  objExpenses.ListExpenses();
+  }
 }

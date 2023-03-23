@@ -8,23 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageUtilities {
 	
-	public WebElement waitForElementTobeVisible(WebDriver driver, WebElement elementToBeLoaded)
-	{
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement element=wait.until(ExpectedConditions.visibilityOf(elementToBeLoaded));
-		return element;
-	}
-	
-	public WebElement waitForElementTobeClickable(WebDriver driver, WebElement elementToBeLoaded)
-	{
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement element=wait.until(ExpectedConditions.elementToBeClickable(elementToBeLoaded));
-		return element;
-	}
 	
 	public Alert waitForAlert(WebDriver driver)
 	{
@@ -49,4 +37,10 @@ public class PageUtilities {
     	Actions action=new Actions(driver);
 		action.moveToElement(element).build().perform();	
     }
+	
+	public static Select selectClassDropdown(WebDriver driver, WebElement element)
+	{
+		Select obj=new Select(element);
+		return obj;
+	}
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.QaLegendBilling.Constants.Constants;
+import com.QaLegendBilling.Utilities.PageUtilities;
 import com.QaLegendBilling.Utilities.WaitUtilities;
 
 public class ExpensesPage {
@@ -25,6 +26,8 @@ public class ExpensesPage {
 	WebElement save;
 	@FindBy(xpath="//div[@class='toast-message']")
 	WebElement expenseAddedMessage;
+	@FindBy(xpath="//select[@name='expense_table_length']")
+	WebElement expenseEntryList;
 	
 	public ExpensesPage(WebDriver driver) { 					 
 		this.driver=driver;
@@ -32,17 +35,23 @@ public class ExpensesPage {
 	}
 	
 	public void clickExpenses() {
-		WaitUtilities.explicitWait(driver, expenses);
+		WaitUtilities.waitForElementTobeClickable(driver, expenses);
 		expenses.click();
 	}
 	
 	public String addExpenses() {
 		addExpenses.click();
-		Select obj=new Select(businessLocation);
+		Select obj=PageUtilities.selectClassDropdown(driver,businessLocation);
 		obj.selectByValue(Constants.DECIMALVALUE);
 		totalAmount.sendKeys(Constants.TOTALAMOUNT);
 		save.click();
 		String expenseAddMsgActual=expenseAddedMessage.getText();
 		return expenseAddMsgActual;
 	}
+	
+	public void ListExpenses() {
+		Select obj=PageUtilities.selectClassDropdown(driver,expenseEntryList);
+		obj.selectByVisibleText("50");
+	}
+	
 }

@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.QaLegendBilling.Utilities.PageUtilities;
+
 public class UsersPage {
 	
 	public WebDriver driver;
@@ -76,7 +78,7 @@ public class UsersPage {
 	}
 	
 	public void setRole(String role) {
-		Select obj=new Select(roleList);
+		Select obj=PageUtilities.selectClassDropdown(driver,roleList);
 		obj.selectByVisibleText(role);
 	}
 	

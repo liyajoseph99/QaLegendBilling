@@ -1,3 +1,4 @@
+com\QaLegendBilling\Base\DriverFactory.class
 com\QaLegendBilling\Scripts\ProductsPageTest.class
 com\QaLegendBilling\Listners\ReTryAnalyzer.class
 com\QaLegendBilling\Scripts\UsersPageTest.class

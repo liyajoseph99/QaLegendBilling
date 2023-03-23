@@ -13,8 +13,23 @@ public class WaitUtilities {
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); 
 	}
 	
-	public static void explicitWait(WebDriver driver,WebElement element) {
+	public static void waitForElementTobeClickable(WebDriver driver,WebElement element) {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(25));  
 		wait.until(ExpectedConditions.elementToBeClickable(element));     
 	} 
+	
+	public WebElement waitForElementTobeVisible(WebDriver driver, WebElement elementToBeLoaded)
+	{
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement element=wait.until(ExpectedConditions.visibilityOf(elementToBeLoaded));
+		return element;
+	}
+	
+	public WebElement waitForElementTobeLoaded(WebDriver driver, WebElement elementToBeLoaded)
+	{
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement element=wait.until(ExpectedConditions.elementToBeClickable(elementToBeLoaded));
+		return element;
+	}
+	
 }
