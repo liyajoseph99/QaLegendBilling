@@ -12,4 +12,5 @@ com\QaLegendBilling\Pages\UsersPage.class
 com\QaLegendBilling\Utilities\RandomUtilities.class
 com\QaLegendBilling\Utilities\PageFunctions.class
 com\QaLegendBilling\Pages\LoginPage.class
+com\QaLegendBilling\Utilities\WaitUtilities$1.class
 com\QaLegendBilling\Pages\ExpensesPage.class

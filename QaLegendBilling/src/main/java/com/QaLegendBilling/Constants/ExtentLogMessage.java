@@ -14,4 +14,7 @@ public class ExtentLogMessage {
 	public static final String EXPENSE_ADDED_SUCCESS="Expense added successfully";
 	public static final String EXPENSE_LISTED_SUCCESS="Expense listed successfully";
 	public static final String UPDATE_CATEGORY_CODE_SUCCESS="Expense Category Code is updated successfully";
+	public static final String VERIFIEDSUPPLIERDUEAMOUNT="Supplier due amount in balance sheet and trial balance is same";
+	public static final String VERIFIEDPURCHASEAMOUNT="Verified Purchase Amount Success";
+	public static final String VERIFIEDDUEAMOUNT="Verified Due Amount Success";
 }

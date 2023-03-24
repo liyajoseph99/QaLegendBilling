@@ -7,16 +7,25 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="com.QaLegendBilling.Scripts.ProductsPageTest">
+      <class name="com.QaLegendBilling.Scripts.UsersPageTest">
         <methods>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="verifyDeactivatingNewProduct"/>
-          <include name="verifyDeletingNewProduct"/>
+          <include name="verifyAddingNewUser"/>
           <include name="afterTest"/>
-          <include name="addUnits"/>
+          <include name="verifyDeletingNewRole"/>
+          <include name="verifyAddingNewRole"/>
         </methods>
-      </class> <!-- com.QaLegendBilling.Scripts.ProductsPageTest -->
+      </class> <!-- com.QaLegendBilling.Scripts.UsersPageTest -->
+      <class name="com.QaLegendBilling.Scripts.PaymentAccountsPageTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="verifySupplierDueAmount"/>
+          <include name="verifyLinkAccountAgainstPaymentRefNumber"/>
+        </methods>
+      </class> <!-- com.QaLegendBilling.Scripts.PaymentAccountsPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

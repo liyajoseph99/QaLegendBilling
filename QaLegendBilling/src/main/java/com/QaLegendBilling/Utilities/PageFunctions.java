@@ -34,7 +34,7 @@ public class PageFunctions {
 		return productname;
 	}
 	
-	public String usersPageNewProductFunctions() {
+	public String usersPageNewUserFunctions() {
 		 objUsers=new UsersPage(driver);
 		 objUsers.clickUserManagement();
 		 objUsers.clickUsers();

@@ -23,7 +23,7 @@ public class UsersPageTest extends TestBase {
 		  retryAnalyzer = com.QaLegendBilling.Listners.ReTryAnalyzer.class) 
   public void verifyAddingNewUser()  {
 	 objUserspage = new PageFunctions(driver);
-	 String email=objUserspage.usersPageNewProductFunctions();
+	 String email=objUserspage.usersPageNewUserFunctions();
 	 objUsers = new UsersPage(driver);
 	 Boolean searchInfo=objUsers.searchUser(email);
 	 Assert.assertTrue(searchInfo);

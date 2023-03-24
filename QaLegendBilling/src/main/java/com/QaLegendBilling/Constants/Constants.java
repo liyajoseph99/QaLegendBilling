@@ -15,7 +15,7 @@ public class Constants {
 	public static final String ROLENAME="Senior Accountant";
 	public static final String SEARCHINFO="Showing 1 to 1 of 1 entries";
 	public static final String SERACHINFOROLEDELETE="No matching records found";
-	public static final String ROLE="Engineer";
+	public static final String ROLE="Supervisor";
 	public static final String EXPECTEDLABEL="Inactive";
 	public static final String DELETEDALERTEXPECTED="Deleted Successfully";
 	public static final String UNITNAME="Boxes";
@@ -24,4 +24,7 @@ public class Constants {
 	public static final String UNITADDEDMSGEXPECTED="Unit added successfully";
 	public static final String EXPENSEADDEDMSGEXPECTED="Expense added successfully";
 	public static final String LISTEXPENSEPAGE="50";
+	public static final String ACCOUNTID="Account9";
+	public static final String ALLLOCATIONS="All locations";
+	public static final String DEMOLOCATION="Demo Company (BL0001)";
 }
