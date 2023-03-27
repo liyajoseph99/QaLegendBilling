@@ -2,15 +2,15 @@
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-23T16:01:52 IST" name="Suite" finished-at="2023-03-23T16:02:20 IST" duration-ms="27368">
+  <suite started-at="2023-03-24T17:37:02 IST" name="Suite" finished-at="2023-03-24T17:37:40 IST" duration-ms="38311">
     <groups>
       <group name="smoke">
         <method signature="LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.QaLegendBilling.Scripts.LoginTest@76ed1b7c]" name="verifyLoginValidUserValidPassword" class="com.QaLegendBilling.Scripts.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-03-23T16:01:52 IST" name="Test" finished-at="2023-03-23T16:02:20 IST" duration-ms="27368">
+    <test started-at="2023-03-24T17:37:02 IST" name="Test" finished-at="2023-03-24T17:37:40 IST" duration-ms="38311">
       <class name="com.QaLegendBilling.Scripts.LoginTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@76ed1b7c]" started-at="2023-03-23T16:01:52 IST" name="beforeTest" finished-at="2023-03-23T16:02:10 IST" duration-ms="17624" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@76ed1b7c]" started-at="2023-03-24T17:37:02 IST" name="beforeTest" finished-at="2023-03-24T17:37:26 IST" duration-ms="23930" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,11 +21,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="verifyLoginValidUserValidPassword()[pri:4, instance:com.QaLegendBilling.Scripts.LoginTest@76ed1b7c]" started-at="2023-03-23T16:02:10 IST" name="verifyLoginValidUserValidPassword" description="verify the login functionality,when valid username and valid password is given" finished-at="2023-03-23T16:02:19 IST" duration-ms="9342" status="PASS">
+        <test-method signature="verifyLoginValidUserValidPassword()[pri:4, instance:com.QaLegendBilling.Scripts.LoginTest@76ed1b7c]" started-at="2023-03-24T17:37:26 IST" name="verifyLoginValidUserValidPassword" description="verify the login functionality,when valid username and valid password is given" finished-at="2023-03-24T17:37:40 IST" duration-ms="13813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginValidUserValidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@76ed1b7c]" started-at="2023-03-23T16:02:19 IST" name="afterMethod" finished-at="2023-03-23T16:02:19 IST" duration-ms="345" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@76ed1b7c]" started-at="2023-03-24T17:37:40 IST" name="afterMethod" finished-at="2023-03-24T17:37:40 IST" duration-ms="420" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@76ed1b7c]" started-at="2023-03-23T16:02:20 IST" name="afterTest" finished-at="2023-03-23T16:02:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@76ed1b7c]" started-at="2023-03-24T17:37:40 IST" name="afterTest" finished-at="2023-03-24T17:37:40 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

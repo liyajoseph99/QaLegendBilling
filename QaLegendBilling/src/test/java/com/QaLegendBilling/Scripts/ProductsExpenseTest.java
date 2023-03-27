@@ -21,7 +21,7 @@ public class ProductsExpenseTest extends LoginTest{
 	
   @Test(description = "Verify newly added unit is listed", priority = 12,dependsOnMethods = "verifyLoginValidUserValidPassword",
 		  groups = {"smoke"}) 
-  public void addUnits()  {
+  public void verifyAddUnits()  {
 	objProducts = new ProductsPage(driver);
 	objProducts.clickProducts();
 	String unitAddedMsgActual=objProducts.addUnits();
@@ -32,7 +32,7 @@ public class ProductsExpenseTest extends LoginTest{
   
   @Test(description = "Verify newly added expense is listed", priority = 11,dependsOnMethods = "verifyLoginValidUserValidPassword",
 		  groups = {"smoke"}) 
-  public void addExpenses()  {
+  public void verifyAddExpenses()  {
 	  objExpenses = new ExpensesPage(driver);
 	  objExpenses.clickExpenses();
 	  String expenseAddMsgActual=objExpenses.addExpenses();

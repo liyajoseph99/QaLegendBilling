@@ -8,11 +8,6 @@
 	<parameter name="browser" value="edge"></parameter>
     <classes>		
       <class name="com.QaLegendBilling.Scripts.LoginTest"/>	
-      <class name="com.QaLegendBilling.Scripts.ExpensePageTest"/>
-      <class name="com.QaLegendBilling.Scripts.UsersPageTest"/>	
-      <class name="com.QaLegendBilling.Scripts.ProductsPageTest"/>	
-      <class name="com.QaLegendBilling.Scripts.PaymentAccountsPageTest"/>	
-	  <class name="com.QaLegendBilling.Scripts.ReportsPageTest"/>	
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

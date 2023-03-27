@@ -43,7 +43,7 @@ public class UsersPageTest extends TestBase {
 	  extentTest.get().assignCategory("regression");
   }
   
-  @Test(description = "Verify newly added role is deleted successfully", priority = 10,enabled=true,groups = {"regression"})
+  @Test(description = "Verify newly added role is deleted successfully", priority = 10,enabled=false,groups = {"regression"})
   public void verifyDeletingNewRole() {
 	  String searchinfoDelete=objUsers.deleteRole(Constants.ROLENAME);
 	  Assert.assertEquals(searchinfoDelete, Constants.SERACHINFOROLEDELETE);

@@ -1,252 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="13" total="30" passed="17">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="141724" started-at="2023-03-24T17:30:54 IST" finished-at="2023-03-24T17:33:15 IST">
+  <suite name="Suite" duration-ms="35749" started-at="2023-03-27T12:11:41 IST" finished-at="2023-03-27T12:12:17 IST">
     <groups>
-      <group name="regression">
-        <method signature="PaymentAccountsPageTest.verifySupplierDueAmount()[pri:15, instance:com.QaLegendBilling.Scripts.PaymentAccountsPageTest@14a2f921]" name="verifySupplierDueAmount" class="com.QaLegendBilling.Scripts.PaymentAccountsPageTest"/>
-        <method signature="PaymentAccountsPageTest.verifyLinkAccountAgainstPaymentRefNumber()[pri:16, instance:com.QaLegendBilling.Scripts.PaymentAccountsPageTest@14a2f921]" name="verifyLinkAccountAgainstPaymentRefNumber" class="com.QaLegendBilling.Scripts.PaymentAccountsPageTest"/>
-        <method signature="ReportsPageTest.verifySupplierPurchaseAmount()[pri:17, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="verifySupplierPurchaseAmount" class="com.QaLegendBilling.Scripts.ReportsPageTest"/>
-        <method signature="ReportsPageTest.verifySupplierDueAmount()[pri:18, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="verifySupplierDueAmount" class="com.QaLegendBilling.Scripts.ReportsPageTest"/>
-        <method signature="ReportsPageTest.verifySupplierPurchaseAmountDemo()[pri:19, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="verifySupplierPurchaseAmountDemo" class="com.QaLegendBilling.Scripts.ReportsPageTest"/>
-        <method signature="ReportsPageTest.verifySupplierDueAmountDemo()[pri:20, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="verifySupplierDueAmountDemo" class="com.QaLegendBilling.Scripts.ReportsPageTest"/>
-        <method signature="UsersPageTest.verifyAddingNewRole()[pri:9, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae]" name="verifyAddingNewRole" class="com.QaLegendBilling.Scripts.UsersPageTest"/>
-        <method signature="UsersPageTest.verifyDeletingNewRole()[pri:10, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae]" name="verifyDeletingNewRole" class="com.QaLegendBilling.Scripts.UsersPageTest"/>
-      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="ExpensePageTest.verifyAddingNewExpenses()[pri:5, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2]" name="verifyAddingNewExpenses" class="com.QaLegendBilling.Scripts.ExpensePageTest"/>
-        <method signature="ExpensePageTest.verifyPaginationWhenNewExpenseIsAdded()[pri:6, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2]" name="verifyPaginationWhenNewExpenseIsAdded" class="com.QaLegendBilling.Scripts.ExpensePageTest"/>
-        <method signature="ExpensePageTest.verifyExpenseCategoryUpdation()[pri:7, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2]" name="verifyExpenseCategoryUpdation" class="com.QaLegendBilling.Scripts.ExpensePageTest"/>
-        <method signature="ProductsPageTest.addUnits()[pri:14, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="addUnits" class="com.QaLegendBilling.Scripts.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyAddingNewProduct()[pri:11, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="verifyAddingNewProduct" class="com.QaLegendBilling.Scripts.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyDeactivatingNewProduct()[pri:12, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="verifyDeactivatingNewProduct" class="com.QaLegendBilling.Scripts.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyDeletingNewProduct()[pri:13, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="verifyDeletingNewProduct" class="com.QaLegendBilling.Scripts.ProductsPageTest"/>
-        <method signature="UsersPageTest.verifyAddingNewUser()[pri:8, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae]" name="verifyAddingNewUser" class="com.QaLegendBilling.Scripts.UsersPageTest"/>
-        <method signature="LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.QaLegendBilling.Scripts.LoginTest@25b485ba]" name="verifyLoginValidUserValidPassword" class="com.QaLegendBilling.Scripts.LoginTest"/>
+        <method signature="LoginTest.verifyLoginValidUserValidPassword(java.lang.String,java.lang.String)[pri:4, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="verifyLoginValidUserValidPassword" class="com.QaLegendBilling.Scripts.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="141724" started-at="2023-03-24T17:30:54 IST" finished-at="2023-03-24T17:33:15 IST">
-      <class name="com.QaLegendBilling.Scripts.ProductsPageTest">
-        <test-method status="PASS" signature="verifyAddingNewProduct()[pri:11, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="verifyAddingNewProduct" duration-ms="16805" started-at="2023-03-24T17:32:20 IST" description="Verify newly added product is listed" finished-at="2023-03-24T17:32:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingNewProduct -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="afterMethod" is-config="true" duration-ms="233" started-at="2023-03-24T17:32:37 IST" finished-at="2023-03-24T17:32:37 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddingNewProduct status=SUCCESS method=ProductsPageTest.verifyAddingNewProduct()[pri:11, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyDeactivatingNewProduct()[pri:12, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="verifyDeactivatingNewProduct" duration-ms="7160" started-at="2023-03-24T17:32:37 IST" description="Verify newly added product is deactivated successfully" finished-at="2023-03-24T17:32:44 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeactivatingNewProduct -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="afterMethod" is-config="true" duration-ms="238" started-at="2023-03-24T17:32:44 IST" finished-at="2023-03-24T17:32:44 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDeactivatingNewProduct status=SUCCESS method=ProductsPageTest.verifyDeactivatingNewProduct()[pri:12, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyDeletingNewProduct()[pri:13, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="verifyDeletingNewProduct" duration-ms="5680" started-at="2023-03-24T17:32:44 IST" description="Verify newly added product is deleted successfully" finished-at="2023-03-24T17:32:50 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeletingNewProduct -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="afterMethod" is-config="true" duration-ms="215" started-at="2023-03-24T17:32:50 IST" finished-at="2023-03-24T17:32:50 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDeletingNewProduct status=SUCCESS method=ProductsPageTest.verifyDeletingNewProduct()[pri:13, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="addUnits()[pri:14, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="addUnits" duration-ms="6041" started-at="2023-03-24T17:32:50 IST" description="Verify newly added unit is listed" finished-at="2023-03-24T17:32:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addUnits -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671]" name="afterMethod" is-config="true" duration-ms="281" started-at="2023-03-24T17:32:56 IST" finished-at="2023-03-24T17:32:56 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addUnits status=SUCCESS method=ProductsPageTest.addUnits()[pri:14, instance:com.QaLegendBilling.Scripts.ProductsPageTest@212bf671] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.QaLegendBilling.Scripts.ProductsPageTest -->
-      <class name="com.QaLegendBilling.Scripts.UsersPageTest">
-        <test-method status="PASS" signature="verifyAddingNewUser()[pri:8, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae]" name="verifyAddingNewUser" duration-ms="13344" started-at="2023-03-24T17:31:50 IST" description="Verify newly added user is listed" finished-at="2023-03-24T17:32:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingNewUser -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae]" name="afterMethod" is-config="true" duration-ms="291" started-at="2023-03-24T17:32:04 IST" finished-at="2023-03-24T17:32:04 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddingNewUser status=SUCCESS method=UsersPageTest.verifyAddingNewUser()[pri:8, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyAddingNewRole()[pri:9, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae]" name="verifyAddingNewRole" duration-ms="11076" started-at="2023-03-24T17:32:04 IST" description="Verify newly added role is listed" finished-at="2023-03-24T17:32:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingNewRole -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae]" name="afterMethod" is-config="true" duration-ms="240" started-at="2023-03-24T17:32:15 IST" finished-at="2023-03-24T17:32:15 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddingNewRole status=SUCCESS method=UsersPageTest.verifyAddingNewRole()[pri:9, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyDeletingNewRole()[pri:10, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae]" name="verifyDeletingNewRole" duration-ms="4016" started-at="2023-03-24T17:32:15 IST" description="Verify newly added role is deleted successfully" finished-at="2023-03-24T17:32:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeletingNewRole -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae]" name="afterMethod" is-config="true" duration-ms="348" started-at="2023-03-24T17:32:19 IST" finished-at="2023-03-24T17:32:20 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDeletingNewRole status=SUCCESS method=UsersPageTest.verifyDeletingNewRole()[pri:10, instance:com.QaLegendBilling.Scripts.UsersPageTest@2ed0fbae] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.QaLegendBilling.Scripts.UsersPageTest -->
-      <class name="com.QaLegendBilling.Scripts.ReportsPageTest">
-        <test-method status="PASS" signature="verifySupplierPurchaseAmount()[pri:17, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="verifySupplierPurchaseAmount" duration-ms="4529" started-at="2023-03-24T17:33:09 IST" description="Verify the displayed total purchase amount when all locations is selected" finished-at="2023-03-24T17:33:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySupplierPurchaseAmount -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="afterMethod" is-config="true" duration-ms="275" started-at="2023-03-24T17:33:13 IST" finished-at="2023-03-24T17:33:14 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySupplierPurchaseAmount status=SUCCESS method=ReportsPageTest.verifySupplierPurchaseAmount()[pri:17, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifySupplierDueAmount()[pri:18, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="verifySupplierDueAmount" duration-ms="204" started-at="2023-03-24T17:33:14 IST" description="Verify the displayed total due amount when all locations is selected" depends-on-methods="com.QaLegendBilling.Scripts.ReportsPageTest.verifySupplierPurchaseAmount" finished-at="2023-03-24T17:33:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySupplierDueAmount -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="afterMethod" is-config="true" duration-ms="206" started-at="2023-03-24T17:33:14 IST" finished-at="2023-03-24T17:33:14 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySupplierDueAmount status=SUCCESS method=ReportsPageTest.verifySupplierDueAmount()[pri:18, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifySupplierPurchaseAmountDemo()[pri:19, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="verifySupplierPurchaseAmountDemo" duration-ms="696" started-at="2023-03-24T17:33:14 IST" description="Verify the displayed total purchase amount when demo location is selected" depends-on-methods="com.QaLegendBilling.Scripts.ReportsPageTest.verifySupplierDueAmount" finished-at="2023-03-24T17:33:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySupplierPurchaseAmountDemo -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="afterMethod" is-config="true" duration-ms="210" started-at="2023-03-24T17:33:15 IST" finished-at="2023-03-24T17:33:15 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySupplierPurchaseAmountDemo status=SUCCESS method=ReportsPageTest.verifySupplierPurchaseAmountDemo()[pri:19, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifySupplierDueAmountDemo()[pri:20, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="verifySupplierDueAmountDemo" duration-ms="138" started-at="2023-03-24T17:33:15 IST" description="Verify the displayed total due amount when demo location is selected" depends-on-methods="com.QaLegendBilling.Scripts.ReportsPageTest.verifySupplierPurchaseAmountDemo" finished-at="2023-03-24T17:33:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySupplierDueAmountDemo -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521]" name="afterMethod" is-config="true" duration-ms="189" started-at="2023-03-24T17:33:15 IST" finished-at="2023-03-24T17:33:15 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySupplierDueAmountDemo status=SUCCESS method=ReportsPageTest.verifySupplierDueAmountDemo()[pri:20, instance:com.QaLegendBilling.Scripts.ReportsPageTest@3c87521] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.QaLegendBilling.Scripts.ReportsPageTest -->
-      <class name="com.QaLegendBilling.Scripts.ExpensePageTest">
-        <test-method status="PASS" signature="verifyAddingNewExpenses()[pri:5, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2]" name="verifyAddingNewExpenses" duration-ms="11142" started-at="2023-03-24T17:31:32 IST" description="Verify newly added expense is listed" finished-at="2023-03-24T17:31:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingNewExpenses -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2]" name="afterMethod" is-config="true" duration-ms="375" started-at="2023-03-24T17:31:43 IST" finished-at="2023-03-24T17:31:43 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddingNewExpenses status=SUCCESS method=ExpensePageTest.verifyAddingNewExpenses()[pri:5, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyPaginationWhenNewExpenseIsAdded()[pri:6, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2]" name="verifyPaginationWhenNewExpenseIsAdded" duration-ms="743" started-at="2023-03-24T17:31:43 IST" description="Verify newly added expense is listed" depends-on-methods="com.QaLegendBilling.Scripts.ExpensePageTest.verifyAddingNewExpenses" finished-at="2023-03-24T17:31:44 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPaginationWhenNewExpenseIsAdded -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2]" name="afterMethod" is-config="true" duration-ms="285" started-at="2023-03-24T17:31:44 IST" finished-at="2023-03-24T17:31:45 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPaginationWhenNewExpenseIsAdded status=SUCCESS method=ExpensePageTest.verifyPaginationWhenNewExpenseIsAdded()[pri:6, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyExpenseCategoryUpdation()[pri:7, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2]" name="verifyExpenseCategoryUpdation" duration-ms="5550" started-at="2023-03-24T17:31:45 IST" description="Verify the expense category is updated successfully" depends-on-methods="com.QaLegendBilling.Scripts.ExpensePageTest.verifyPaginationWhenNewExpenseIsAdded" finished-at="2023-03-24T17:31:50 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyExpenseCategoryUpdation -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2]" name="afterMethod" is-config="true" duration-ms="387" started-at="2023-03-24T17:31:50 IST" finished-at="2023-03-24T17:31:50 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyExpenseCategoryUpdation status=SUCCESS method=ExpensePageTest.verifyExpenseCategoryUpdation()[pri:7, instance:com.QaLegendBilling.Scripts.ExpensePageTest@240237d2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.QaLegendBilling.Scripts.ExpensePageTest -->
+    <test name="Test" duration-ms="35749" started-at="2023-03-27T12:11:41 IST" finished-at="2023-03-27T12:12:17 IST">
       <class name="com.QaLegendBilling.Scripts.LoginTest">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@25b485ba]" name="beforeTest" is-config="true" duration-ms="22852" started-at="2023-03-24T17:30:54 IST" finished-at="2023-03-24T17:31:17 IST">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="beforeTest" is-config="true" duration-ms="14047" started-at="2023-03-27T12:11:41 IST" finished-at="2023-03-27T12:11:55 IST">
           <params>
             <param index="0">
               <value>
@@ -257,58 +21,119 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="verifyLoginValidUserValidPassword()[pri:4, instance:com.QaLegendBilling.Scripts.LoginTest@25b485ba]" name="verifyLoginValidUserValidPassword" duration-ms="14778" started-at="2023-03-24T17:31:17 IST" description="verify the login functionality,when valid username and valid password is given" finished-at="2023-03-24T17:31:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginValidUserValidPassword -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@25b485ba]" name="afterMethod" is-config="true" duration-ms="477" started-at="2023-03-24T17:31:31 IST" finished-at="2023-03-24T17:31:32 IST">
+        <test-method status="PASS" signature="verifyLoginInvalidUserInvalidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="verifyLoginInvalidUserInvalidPassword" duration-ms="5886" started-at="2023-03-27T12:11:59 IST" description="verify the login functionality,when invalid username and invalid password is given" data-provider="InvalidUserInvalidPassword" finished-at="2023-03-27T12:12:04 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginValidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.QaLegendBilling.Scripts.LoginTest@25b485ba] output={null}]]]>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginInvalidUserInvalidPassword -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="afterMethod" is-config="true" duration-ms="269" started-at="2023-03-27T12:12:04 IST" finished-at="2023-03-27T12:12:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginInvalidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserInvalidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@25b485ba]" name="afterTest" is-config="true" duration-ms="0" started-at="2023-03-24T17:33:15 IST" finished-at="2023-03-24T17:33:15 IST">
+        <test-method status="PASS" signature="verifyLoginValidUserInvalidPassword(java.lang.String,java.lang.String)[pri:2, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="verifyLoginValidUserInvalidPassword" duration-ms="2063" started-at="2023-03-27T12:12:05 IST" description="verify the login functionality,when valid username and invalid password is given" data-provider="ValidUserInvalidPassword" finished-at="2023-03-27T12:12:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginValidUserInvalidPassword -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="afterMethod" is-config="true" duration-ms="189" started-at="2023-03-27T12:12:07 IST" finished-at="2023-03-27T12:12:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginValidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserInvalidPassword(java.lang.String,java.lang.String)[pri:2, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifyLoginInvalidUserValidPassword(java.lang.String,java.lang.String)[pri:3, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="verifyLoginInvalidUserValidPassword" duration-ms="2590" started-at="2023-03-27T12:12:07 IST" description="verify the login functionality,when invalid username and valid password is given" data-provider="InvalidUserValidPassword" finished-at="2023-03-27T12:12:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginInvalidUserValidPassword -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="afterMethod" is-config="true" duration-ms="206" started-at="2023-03-27T12:12:10 IST" finished-at="2023-03-27T12:12:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginInvalidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserValidPassword(java.lang.String,java.lang.String)[pri:3, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifyLoginValidUserValidPassword(java.lang.String,java.lang.String)[pri:4, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="verifyLoginValidUserValidPassword" duration-ms="6051" started-at="2023-03-27T12:12:10 IST" description="verify the login functionality,when valid username and valid password is given" data-provider="ValidUserValidPassword" finished-at="2023-03-27T12:12:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginValidUserValidPassword -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="afterMethod" is-config="true" duration-ms="365" started-at="2023-03-27T12:12:16 IST" finished-at="2023-03-27T12:12:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginValidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserValidPassword(java.lang.String,java.lang.String)[pri:4, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.QaLegendBilling.Scripts.LoginTest@482cd91f]" name="afterTest" is-config="true" duration-ms="1" started-at="2023-03-27T12:12:17 IST" finished-at="2023-03-27T12:12:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.QaLegendBilling.Scripts.LoginTest -->
-      <class name="com.QaLegendBilling.Scripts.PaymentAccountsPageTest">
-        <test-method status="PASS" signature="verifySupplierDueAmount()[pri:15, instance:com.QaLegendBilling.Scripts.PaymentAccountsPageTest@14a2f921]" name="verifySupplierDueAmount" duration-ms="7123" started-at="2023-03-24T17:32:56 IST" description="Verify supplier due amount is listed same in Balance Sheet and Trial Balance" finished-at="2023-03-24T17:33:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySupplierDueAmount -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.PaymentAccountsPageTest@14a2f921]" name="afterMethod" is-config="true" duration-ms="336" started-at="2023-03-24T17:33:04 IST" finished-at="2023-03-24T17:33:04 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySupplierDueAmount status=SUCCESS method=PaymentAccountsPageTest.verifySupplierDueAmount()[pri:15, instance:com.QaLegendBilling.Scripts.PaymentAccountsPageTest@14a2f921] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyLinkAccountAgainstPaymentRefNumber()[pri:16, instance:com.QaLegendBilling.Scripts.PaymentAccountsPageTest@14a2f921]" name="verifyLinkAccountAgainstPaymentRefNumber" duration-ms="4688" started-at="2023-03-24T17:33:04 IST" description="Verify Link Account functionality against Payment Ref Number in Payment Account Report" depends-on-methods="com.QaLegendBilling.Scripts.PaymentAccountsPageTest.verifySupplierDueAmount" finished-at="2023-03-24T17:33:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLinkAccountAgainstPaymentRefNumber -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.QaLegendBilling.Scripts.PaymentAccountsPageTest@14a2f921]" name="afterMethod" is-config="true" duration-ms="292" started-at="2023-03-24T17:33:09 IST" finished-at="2023-03-24T17:33:09 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLinkAccountAgainstPaymentRefNumber status=SUCCESS method=PaymentAccountsPageTest.verifyLinkAccountAgainstPaymentRefNumber()[pri:16, instance:com.QaLegendBilling.Scripts.PaymentAccountsPageTest@14a2f921] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.QaLegendBilling.Scripts.PaymentAccountsPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -10,23 +10,18 @@ public class DriverFactory {
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 	
 	public static WebDriver testInitialization(String browser){ //used to initialize the thread-local for the given browser
-        if(browser.equals("chrome")){
-            try {
-				tlDriver.set(new ChromeDriver());
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-        }else if(browser.equals("FireFox")){
-            try {
+       
+		if(browser.equals("chrome")){	
+        	tlDriver.set(new ChromeDriver());
+		}
+        
+		else if(browser.equals("FireFox")){
 				tlDriver.set(new FirefoxDriver());
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-        }else if(browser.equals("edge")){
+		}
+		else if(browser.equals("edge")){
             tlDriver.set(new EdgeDriver());
-        }else{
+        }
+		else{
             throw new RuntimeException("Invalid browser");
         }
         getDriver().manage().deleteAllCookies();

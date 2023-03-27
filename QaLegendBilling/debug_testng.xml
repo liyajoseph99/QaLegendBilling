@@ -7,7 +7,7 @@
   <test thread-count="5" name="Test">
 	<parameter name="browser" value="edge"></parameter>
     <classes>
-      <class name="com.QaLegendBilling.Base.TestBase"/>
+	  <class name="com.QaLegendBilling.Base.ProductsExpenseTest"/>	
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
