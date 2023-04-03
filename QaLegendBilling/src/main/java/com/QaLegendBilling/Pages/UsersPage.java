@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.QaLegendBilling.Utilities.PageUtilities;
+import com.QaLegendBilling.Utilities.WaitUtilities;
 
 public class UsersPage {
 	
@@ -125,6 +126,7 @@ public class UsersPage {
 	public String deleteRole(String rolename) {
 		searchRole.clear();
 		searchRole.sendKeys(rolename);
+		WaitUtilities.waitForElementTobeClickable(driver, delete);	
 		delete.click();
 		deleteOKButton.click();
 		searchRole.clear();

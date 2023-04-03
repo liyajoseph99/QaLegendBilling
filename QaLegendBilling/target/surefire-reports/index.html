@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.QaLegendBilling.Scripts.LoginTest" class="method navigator-link" hash-for-method="verifyLoginValidUserValidPassword">verifyLoginValidUserValidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.QaLegendBilling.Scripts.LoginTest" class="method navigator-link" hash-for-method="verifyLoginInvalidUserInvalidPassword(test, test)">verifyLoginInvalidUserInvalidPassword(test, test)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.QaLegendBilling.Scripts.LoginTest" class="method navigator-link" hash-for-method="verifyLoginInvalidUserValidPassword(test, 123456)">verifyLoginInvalidUserValidPassword(test, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.QaLegendBilling.Scripts.LoginTest" class="method navigator-link" hash-for-method="verifyLoginValidUserInvalidPassword(admin, test)">verifyLoginValidUserInvalidPassword(admin, test)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.QaLegendBilling.Scripts.LoginTest" class="method navigator-link" hash-for-method="verifyLoginValidUserValidPassword(admin, 123456)">verifyLoginValidUserValidPassword(admin, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,9 +142,40 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginValidUserValidPassword">
-                  </a> <!-- verifyLoginValidUserValidPassword -->
+                  <a name="verifyLoginInvalidUserInvalidPassword(test, test)">
+                  </a> <!-- verifyLoginInvalidUserInvalidPassword(test, test) -->
+                  <span class="method-name">verifyLoginInvalidUserInvalidPassword</span>
+                  <span class="parameters">(test, test)</span>
+                  <em>
+(verify the login functionality,when invalid username and invalid password is given)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginInvalidUserValidPassword(test, 123456)">
+                  </a> <!-- verifyLoginInvalidUserValidPassword(test, 123456) -->
+                  <span class="method-name">verifyLoginInvalidUserValidPassword</span>
+                  <span class="parameters">(test, 123456)</span>
+                  <em>
+(verify the login functionality,when invalid username and valid password is given)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginValidUserInvalidPassword(admin, test)">
+                  </a> <!-- verifyLoginValidUserInvalidPassword(admin, test) -->
+                  <span class="method-name">verifyLoginValidUserInvalidPassword</span>
+                  <span class="parameters">(admin, test)</span>
+                  <em>
+(verify the login functionality,when valid username and invalid password is given)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginValidUserValidPassword(admin, 123456)">
+                  </a> <!-- verifyLoginValidUserValidPassword(admin, 123456) -->
                   <span class="method-name">verifyLoginValidUserValidPassword</span>
+                  <span class="parameters">(admin, 123456)</span>
                   <em>
 (verify the login functionality,when valid username and valid password is given)                  </em>
                 </div> <!-- method-content -->
@@ -200,16 +246,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginValidUserValidPassword')
+data.setCell(0, 1, 'verifyLoginInvalidUserInvalidPassword')
 data.setCell(0, 2, 'com.QaLegendBilling.Scripts.LoginTest')
-data.setCell(0, 3, 13813);
+data.setCell(0, 3, 5527);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLoginValidUserValidPassword')
+data.setCell(1, 2, 'com.QaLegendBilling.Scripts.LoginTest')
+data.setCell(1, 3, 5389);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLoginValidUserInvalidPassword')
+data.setCell(2, 2, 'com.QaLegendBilling.Scripts.LoginTest')
+data.setCell(2, 3, 2712);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyLoginInvalidUserValidPassword')
+data.setCell(3, 2, 'com.QaLegendBilling.Scripts.LoginTest')
+data.setCell(3, 3, 2115);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -224,20 +282,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.QaLegendBilling.Scripts.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyLoginValidUserInvalidPassword</span>
-                <br/>
-                <span class="ignored-method-name">verifyLoginInvalidUserInvalidPassword</span>
-                <br/>
-                <span class="ignored-method-name">verifyLoginInvalidUserValidPassword</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -252,16 +299,40 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">verifyLoginValidUserValidPassword</span>
-                <span class="method-start">24034 ms</span>
+                <span class="method-name">verifyLoginInvalidUserInvalidPassword(test, test)</span>
+                <span class="method-start">24336 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyLoginInvalidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginIn...)</span>
+                <span class="method-start">29869 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginValidUserInvalidPassword(admin, test)</span>
+                <span class="method-start">30341 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyLoginValidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginVali...)</span>
+                <span class="method-start">33054 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginInvalidUserValidPassword(test, 123456)</span>
+                <span class="method-start">33506 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyLoginInvalidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginInva...)</span>
+                <span class="method-start">35622 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginValidUserValidPassword(admin, 123456)</span>
+                <span class="method-start">36142 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyLoginValidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginValidU...)</span>
-                <span class="method-start">37871 ms</span>
+                <span class="method-start">41536 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">38302 ms</span>
+                <span class="method-start">41904 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

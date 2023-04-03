@@ -10,7 +10,7 @@ import com.QaLegendBilling.Pages.PaymentAccountsPage;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class PaymentAccountsPageTest extends TestBase{
+public class PaymentAccountsPageTest extends LoginTest{
 	
 	PaymentAccountsPage objPaymentAccounts;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();

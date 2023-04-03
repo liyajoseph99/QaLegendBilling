@@ -7,6 +7,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.internal.ClassHelper;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,14 +23,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 public class TestBase {
 	
 	public static Properties prop=null;
-	public static WebDriver driver;
-	
+	public  WebDriver driver;
   
   public void testBase() {
 	  
@@ -49,23 +52,21 @@ public class TestBase {
 	  }
   }
   
-  @AfterMethod
-  public void afterMethod(ITestResult r) throws IOException {
-	  if(ITestResult.SUCCESS==r.getStatus()) {
-			  File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			  FileUtils.copyFile(f, new File(Constants.SCREENSHOTPATH+r.getName()+Constants.SCREENSHOTFORMAT));
-		  }
-  }
   
   @BeforeTest(groups = {"smoke"})
   @Parameters({"browser"})
-  public void beforeTest(String browser1) {
+  public void setUp(String browser1) {
 	  
 	  testBase();    																				
 	  
-	  if(browser1.equalsIgnoreCase("edge")) {														
+	  if(browser1.equalsIgnoreCase("edge")) {	
 		  WebDriverManager.edgedriver().setup();
 		  driver=new EdgeDriver();
+		 // DriverFactory.getInstance().setDriver(browser1);
+		 // driver=DriverFactory.getInstance().getDriver();
+		 // System.out.println("in before test:"+driver);
+		 // System.out.println("in before test:"+Thread.currentThread().getId());  
+
 	  }
 	  else if(browser1.equalsIgnoreCase("chrome")) {														
 		  WebDriverManager.chromedriver().setup();
@@ -76,17 +77,18 @@ public class TestBase {
 		 System.setProperty(Constants.GECKOWEBDRIVER, Constants.GECKODRIVERPATH);
 		  driver=new FirefoxDriver();
 	  }
-	  
+	  String baseUrl=prop.getProperty("url");
+	 // System.out.println("in before test-before url:"+driver);
+	  driver.get(baseUrl);
+	 // System.out.println("in before test-after url:"+driver);
 	  driver.manage().window().maximize();
 	  WaitUtilities.implicitWait(driver);
-	  
-	  String baseUrl=prop.getProperty("url");	
-	 // driver = DriverFactory.testInitialization(browser1);
-	  driver.get(baseUrl);
   }
 
   @AfterTest
-  public void afterTest() {
+  public void tearDown() {
+	  DriverFactory.getInstance().closeBrowser();
+	  System.out.println("in after test:"+Thread.currentThread().getId());
   }
 
 }

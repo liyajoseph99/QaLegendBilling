@@ -4,19 +4,23 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.QaLegendBilling.Base.TestBase;
+import com.QaLegendBilling.Base.TestBase;
 import com.QaLegendBilling.Constants.Constants;
 import com.QaLegendBilling.Constants.ExtentLogMessage;
+import com.QaLegendBilling.DataProvider.DataProviders;
 import com.QaLegendBilling.Listners.TestListner;
+import com.QaLegendBilling.Pages.LoginPage;
 import com.QaLegendBilling.Pages.UsersPage;
 import com.QaLegendBilling.Utilities.PageFunctions;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class UsersPageTest extends TestBase {
+public class UsersPageTest extends LoginTest {
 	
 	PageFunctions objUserspage;
 	UsersPage objUsers;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();
+
 	
   @Test(description = "Verify newly added user is listed", priority = 8,enabled=true,
 		  groups = {"smoke"},
@@ -31,7 +35,8 @@ public class UsersPageTest extends TestBase {
 	 extentTest.get().assignCategory("smoke");
   }
   
-  @Test(description = "Verify newly added role is listed", priority = 9,enabled=true,groups = {"regression"})
+  @Test(description = "Verify newly added role is listed", priority = 9,enabled=true,groups = {"regression"},
+		  dependsOnMethods = "verifyAddingNewUser")
   public void verifyAddingNewRole()  {
 	  objUsers.clickRoles();
 	  objUsers.clickAddBtn();
@@ -43,7 +48,8 @@ public class UsersPageTest extends TestBase {
 	  extentTest.get().assignCategory("regression");
   }
   
-  @Test(description = "Verify newly added role is deleted successfully", priority = 10,enabled=false,groups = {"regression"})
+  @Test(description = "Verify newly added role is deleted successfully", priority = 10,enabled=true,groups = {"regression"},
+		  dependsOnMethods = "verifyAddingNewUser")
   public void verifyDeletingNewRole() {
 	  String searchinfoDelete=objUsers.deleteRole(Constants.ROLENAME);
 	  Assert.assertEquals(searchinfoDelete, Constants.SERACHINFOROLEDELETE);

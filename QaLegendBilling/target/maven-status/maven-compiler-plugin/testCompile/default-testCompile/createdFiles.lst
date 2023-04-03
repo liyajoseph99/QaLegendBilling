@@ -8,4 +8,5 @@ com\QaLegendBilling\Listners\TestListner.class
 com\QaLegendBilling\Base\TestBase.class
 com\QaLegendBilling\Scripts\PaymentAccountsPageTest.class
 com\QaLegendBilling\Scripts\ExpensePageTest.class
+com\QaLegendBilling\DataProvider\DataProviders.class
 com\QaLegendBilling\Scripts\ProductsExpenseTest.class

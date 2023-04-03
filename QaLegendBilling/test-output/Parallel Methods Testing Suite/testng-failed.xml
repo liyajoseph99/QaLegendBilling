@@ -7,15 +7,14 @@
   <test thread-count="2" name="Parallel Methods Test(failed)" parallel="methods">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="com.QaLegendBilling.Scripts.UsersPageTest">
+      <class name="com.QaLegendBilling.Scripts.ProductsExpenseTest">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="verifyAddingNewUser"/>
-          <include name="afterTest"/>
-          <include name="verifyAddingNewRole"/>
+          <include name="setUp"/>
+          <include name="verifyAddExpenses"/>
+          <include name="tearDown"/>
+          <include name="verifyAddUnits"/>
         </methods>
-      </class> <!-- com.QaLegendBilling.Scripts.UsersPageTest -->
+      </class> <!-- com.QaLegendBilling.Scripts.ProductsExpenseTest -->
     </classes>
   </test> <!-- Parallel Methods Test(failed) -->
 </suite> <!-- Failed suite [Parallel Methods Testing Suite] -->

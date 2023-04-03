@@ -54,6 +54,7 @@ public class ExpensesPage {
 	}
 	
 	public String addExpenses() {
+		WaitUtilities.waitForElementTobeClickable(driver, addExpenses);	
 		addExpenses.click();
 		Select obj=PageUtilities.selectClassDropdown(driver,businessLocation);
 		obj.selectByValue(Constants.DECIMALVALUE);

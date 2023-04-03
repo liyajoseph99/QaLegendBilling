@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.QaLegendBilling.Utilities.WaitUtilities;
+
 public class LoginPage {
 
 	public WebDriver driver;
@@ -26,6 +28,7 @@ public class LoginPage {
 	}
 
 	public void setUsername(String username) {
+		WaitUtilities.waitForElementTobeClickable(driver, user);	
 		user.clear();
 		user.sendKeys(username);
 	}

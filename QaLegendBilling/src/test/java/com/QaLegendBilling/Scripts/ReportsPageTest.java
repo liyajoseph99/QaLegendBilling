@@ -10,7 +10,7 @@ import com.QaLegendBilling.Pages.ReportsPage;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class ReportsPageTest extends TestBase{
+public class ReportsPageTest extends LoginTest{
 	
 	ReportsPage objReports;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();

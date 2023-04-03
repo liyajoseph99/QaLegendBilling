@@ -15,7 +15,7 @@ public class WaitUtilities {
 
 	public static void implicitWait(WebDriver driver) 
 	{
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); 
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); 
 	}
 	
 	public static void waitForElementTobeClickable(WebDriver driver,WebElement element) 

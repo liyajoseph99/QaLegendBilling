@@ -86,6 +86,7 @@ public class ProductsPage {
 	}
 	
 	public void clickAddProducts() {
+		WaitUtilities.waitForElementTobeClickable(driver, addProducts);
 		addProducts.click();
 	}
 	
@@ -154,13 +155,17 @@ public class ProductsPage {
 	}
 	
 	public String addUnits() {
+		WaitUtilities.waitForElementTobeClickable(driver, units);
 		units.click();
+		WaitUtilities.waitForElementTobeClickable(driver, addUnits);
 		addUnits.click();
+		WaitUtilities.waitForElementTobeClickable(driver, unitName);
 		unitName.sendKeys(Constants.UNITNAME);
 		unitShortName.sendKeys(Constants.UNITNAME);
 		Select obj=PageUtilities.selectClassDropdown(driver,allowDecimal);
 		obj.selectByValue(Constants.DECIMALVALUE);
 		saveUnits.click();
+		WaitUtilities.waitForElementTobeVisible(driver, unitAddedMessage);
 		String unitAddedMsgActual=unitAddedMessage.getText();
 		return unitAddedMsgActual;
 	}
