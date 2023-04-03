@@ -9,7 +9,6 @@
     <classes>
       <class name="com.QaLegendBilling.Scripts.PaymentAccountsPageTest"/>
       <class name="com.QaLegendBilling.Scripts.ReportsPageTest"/>
-	  <class name="com.QaLegendBilling.Scripts.ExpensePageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -53,19 +53,19 @@ public class TestBase {
   }
   
   
-  @BeforeTest(groups = {"smoke"})
+  @BeforeClass(groups = {"smoke"})
   @Parameters({"browser"})
   public void setUp(String browser1) {
 	  
 	  testBase();    																				
 	  
 	  if(browser1.equalsIgnoreCase("edge")) {	
-		  WebDriverManager.edgedriver().setup();
-		  driver=new EdgeDriver();
-		 // DriverFactory.getInstance().setDriver(browser1);
-		 // driver=DriverFactory.getInstance().getDriver();
-		 // System.out.println("in before test:"+driver);
-		 // System.out.println("in before test:"+Thread.currentThread().getId());  
+		 // WebDriverManager.edgedriver().setup();
+		 // driver=new EdgeDriver();
+		  DriverFactory.getInstance().setDriver(browser1);
+		  driver=DriverFactory.getInstance().getDriver();
+		  System.out.println("in before test:"+driver);
+		  System.out.println("in before test:"+Thread.currentThread().getId());  
 
 	  }
 	  else if(browser1.equalsIgnoreCase("chrome")) {														
@@ -78,14 +78,14 @@ public class TestBase {
 		  driver=new FirefoxDriver();
 	  }
 	  String baseUrl=prop.getProperty("url");
-	 // System.out.println("in before test-before url:"+driver);
+	  System.out.println("in before test-before url:"+driver);
 	  driver.get(baseUrl);
-	 // System.out.println("in before test-after url:"+driver);
+	  System.out.println("in before test-after url:"+driver);
 	  driver.manage().window().maximize();
 	  WaitUtilities.implicitWait(driver);
   }
 
-  @AfterTest
+  @AfterClass
   public void tearDown() {
 	  DriverFactory.getInstance().closeBrowser();
 	  System.out.println("in after test:"+Thread.currentThread().getId());

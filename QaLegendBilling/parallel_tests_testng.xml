@@ -7,7 +7,6 @@
   <test name="VerifyUsersPageTest">
 	<parameter name="browser" value="edge"></parameter>
     <classes>
-      <class name="com.QaLegendBilling.Scripts.LoginTest"/>
       <class name="com.QaLegendBilling.Scripts.UsersPageTest"/>
     </classes>
   </test> <!-- Test -->

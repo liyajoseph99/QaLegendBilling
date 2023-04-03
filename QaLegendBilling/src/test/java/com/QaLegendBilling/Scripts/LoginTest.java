@@ -18,7 +18,7 @@ public class LoginTest extends TestBase {
 	LoginPage objLogin;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();
 	
-  @Test(dataProviderClass = DataProviders.class,dataProvider = "InvalidUserInvalidPassword",enabled=false,
+  @Test(dataProviderClass = DataProviders.class,dataProvider = "InvalidUserInvalidPassword",enabled=true,
 		  description = "verify the login functionality,when invalid username and invalid password is given",priority = 1)
   public void verifyLoginInvalidUserInvalidPassword(String username,String password)  {
 	  objLogin=new LoginPage(driver);
@@ -30,7 +30,7 @@ public class LoginTest extends TestBase {
   }
   
   @Test(dataProviderClass = DataProviders.class,dataProvider = "ValidUserInvalidPassword",
-		  enabled=false,description = "verify the login functionality,when valid username and invalid password is given",priority = 2)
+		  enabled=true,description = "verify the login functionality,when valid username and invalid password is given",priority = 2)
   public void verifyLoginValidUserInvalidPassword(String username,String password) {
 	  objLogin=new LoginPage(driver);
 	  objLogin.setUsername(username);
@@ -41,7 +41,7 @@ public class LoginTest extends TestBase {
   }
   
   @Test(dataProviderClass = DataProviders.class,dataProvider = "InvalidUserValidPassword",
-		  enabled=false,description = "verify the login functionality,when invalid username and valid password is given",priority = 3)
+		  enabled=true,description = "verify the login functionality,when invalid username and valid password is given",priority = 3)
   public void verifyLoginInvalidUserValidPassword(String username,String password)  {
 	  objLogin=new LoginPage(driver);
 	  objLogin.setUsername(username);
