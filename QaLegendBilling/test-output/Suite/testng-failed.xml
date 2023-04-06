@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.QaLegendBilling.Listners.TestListner"/>
   </listeners>
-  <test thread-count="5" name="TestUsingEdgeBrowser(failed)">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
       <class name="com.QaLegendBilling.Scripts.ExpensePageTest">
@@ -17,19 +17,5 @@
         </methods>
       </class> <!-- com.QaLegendBilling.Scripts.ExpensePageTest -->
     </classes>
-  </test> <!-- TestUsingEdgeBrowser(failed) -->
-  <test thread-count="5" name="TestUsingFirefoxBrowser(failed)">
-    <parameter name="browser" value="gecko"/>
-    <classes>
-      <class name="com.QaLegendBilling.Scripts.ExpensePageTest">
-        <methods>
-          <include name="verifyAddingNewExpenses"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyPaginationWhenNewExpenseIsAdded"/>
-          <include name="verifyExpenseCategoryUpdation"/>
-        </methods>
-      </class> <!-- com.QaLegendBilling.Scripts.ExpensePageTest -->
-    </classes>
-  </test> <!-- TestUsingFirefoxBrowser(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

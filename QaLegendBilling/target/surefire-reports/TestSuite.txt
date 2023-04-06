@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.46 s <<< FAILURE! - in TestSuite
-com.QaLegendBilling.Scripts.LoginTest.tearDown  Time elapsed: 10.079 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because the return value of "com.QaLegendBilling.Base.DriverFactory.getDriver()" is null
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 320.719 s - in TestSuite

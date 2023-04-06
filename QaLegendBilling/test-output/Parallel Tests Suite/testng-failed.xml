@@ -4,19 +4,19 @@
   <listeners>
     <listener class-name="com.QaLegendBilling.Listners.TestListner"/>
   </listeners>
-  <test thread-count="2" name="VerifyUsersPageTest(failed)" parallel="tests">
+  <test thread-count="2" name="VerifyReportsPageTest(failed)" parallel="tests">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="com.QaLegendBilling.Scripts.UsersPageTest">
+      <class name="com.QaLegendBilling.Scripts.ReportsPageTest">
         <methods>
+          <include name="verifySupplierPurchaseAmountDemo"/>
           <include name="setUp"/>
-          <include name="verifyAddingNewUser"/>
           <include name="tearDown"/>
-          <include name="verifyDeletingNewRole"/>
-          <include name="verifyAddingNewRole"/>
-          <include name="verifyLoginValidUserValidPassword" invocation-numbers="0"/>
+          <include name="verifySupplierPurchaseAmount"/>
+          <include name="verifySupplierDueAmount"/>
+          <include name="verifySupplierDueAmountDemo"/>
         </methods>
-      </class> <!-- com.QaLegendBilling.Scripts.UsersPageTest -->
+      </class> <!-- com.QaLegendBilling.Scripts.ReportsPageTest -->
     </classes>
-  </test> <!-- VerifyUsersPageTest(failed) -->
+  </test> <!-- VerifyReportsPageTest(failed) -->
 </suite> <!-- Failed suite [Parallel Tests Suite] -->

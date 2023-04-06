@@ -7,15 +7,6 @@
   <test thread-count="2" name="ParallelClassesTesting(failed)" parallel="classes">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="com.QaLegendBilling.Scripts.PaymentAccountsPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyLoginValidUserValidPassword"/>
-          <include name="verifySupplierDueAmount"/>
-          <include name="verifyLinkAccountAgainstPaymentRefNumber"/>
-        </methods>
-      </class> <!-- com.QaLegendBilling.Scripts.PaymentAccountsPageTest -->
       <class name="com.QaLegendBilling.Scripts.ReportsPageTest">
         <methods>
           <include name="verifySupplierPurchaseAmountDemo"/>
@@ -23,7 +14,6 @@
           <include name="tearDown"/>
           <include name="verifySupplierPurchaseAmount"/>
           <include name="verifySupplierDueAmount"/>
-          <include name="verifyLoginValidUserValidPassword"/>
           <include name="verifySupplierDueAmountDemo"/>
         </methods>
       </class> <!-- com.QaLegendBilling.Scripts.ReportsPageTest -->

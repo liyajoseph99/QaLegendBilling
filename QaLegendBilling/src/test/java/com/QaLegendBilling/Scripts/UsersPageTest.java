@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.QaLegendBilling.Base.TestBase;
-import com.QaLegendBilling.Base.TestBase;
 import com.QaLegendBilling.Constants.Constants;
 import com.QaLegendBilling.Constants.ExtentLogMessage;
 import com.QaLegendBilling.DataProvider.DataProviders;
@@ -15,7 +14,7 @@ import com.QaLegendBilling.Utilities.PageFunctions;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class UsersPageTest extends LoginTest {
+public class UsersPageTest extends TestBase {
 	
 	PageFunctions objUserspage;
 	UsersPage objUsers;

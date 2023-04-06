@@ -7,11 +7,7 @@
   <test  name="ParallelMethodsTest">
 	<parameter name="browser" value="edge"></parameter>
     <classes>
-      <class name="com.QaLegendBilling.Scripts.ProductsExpenseTest">
-       <methods>
-        <include name="verifyAddUnits"/>
-        <include name="verifyAddExpenses"/>
-       </methods>
+      <class name="com.QaLegendBilling.Scripts.LoginTest">
       </class>
     </classes>
   </test> <!-- Parallel Methods Test -->

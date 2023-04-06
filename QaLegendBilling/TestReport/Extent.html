@@ -29,7 +29,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -42,7 +41,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a>
-				<span class='suite-start-time'>3 Apr, 2023 7:25:29 AM</span>
+				<span class='suite-start-time'>4 Apr, 2023 8:07:05 AM</span>
 			</a>
 			<a>
 				<span>v3.0.0</span>
@@ -81,7 +80,6 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>smoke</a></li>
-					<li><a href='#'>regression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -130,22 +128,17 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyLoginValidUserValidPassword</span>
-						<span class='test-time'>3 Apr, 2023 7:26:49 AM</span>
+						<span class='test-name'>verifyLoginInvalidUserInvalidPassword</span>
+						<span class='test-time'>4 Apr, 2023 8:07:32 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>3 Apr, 2023 7:26:49 AM</span>
-	<span class='label end-time'>3 Apr, 2023 7:29:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 2m 25s+147ms</span>
+	<span class='label start-time'>4 Apr, 2023 8:07:32 AM</span>
+	<span class='label end-time'>4 Apr, 2023 8:08:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 50s+296ms</span>
 </div>
-	<div class='test-desc'>verify the login functionality,when valid username and valid password is given </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>smoke</span>
-			</div>
-	</div>
+	<div class='test-desc'>verify the login functionality,when invalid username and invalid password is given </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -158,12 +151,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:27:40 AM</td>
-					<td class='step-details'>LoggedIn successfully</td>
+					<td class='timestamp'>8:07:38 AM</td>
+					<td class='step-details'>Login failed with invalid credential</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:27:40 AM</td>
+					<td class='timestamp'>8:07:38 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -175,15 +168,95 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyLoginValidUserValidPassword</span>
-						<span class='test-time'>3 Apr, 2023 7:26:49 AM</span>
+						<span class='test-name'>verifyLoginValidUserInvalidPassword</span>
+						<span class='test-time'>4 Apr, 2023 8:07:39 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>3 Apr, 2023 7:26:49 AM</span>
-	<span class='label end-time'>3 Apr, 2023 7:29:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 2m 24s+918ms</span>
+	<span class='label start-time'>4 Apr, 2023 8:07:39 AM</span>
+	<span class='label end-time'>4 Apr, 2023 8:08:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 43s+749ms</span>
+</div>
+	<div class='test-desc'>verify the login functionality,when valid username and invalid password is given </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:07:42 AM</td>
+					<td class='step-details'>Login failed with invalid credential</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:07:42 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyLoginInvalidUserValidPassword</span>
+						<span class='test-time'>4 Apr, 2023 8:07:42 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>4 Apr, 2023 8:07:42 AM</span>
+	<span class='label end-time'>4 Apr, 2023 8:08:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 40s+584ms</span>
+</div>
+	<div class='test-desc'>verify the login functionality,when invalid username and valid password is given </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:07:44 AM</td>
+					<td class='step-details'>Login failed with invalid credential</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:07:44 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyLoginValidUserValidPassword</span>
+						<span class='test-time'>4 Apr, 2023 8:07:45 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>4 Apr, 2023 8:07:45 AM</span>
+	<span class='label end-time'>4 Apr, 2023 8:08:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 38s+16ms</span>
 </div>
 	<div class='test-desc'>verify the login functionality,when valid username and valid password is given </div>
 	<div class='test-attributes'>
@@ -203,12 +276,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:27:39 AM</td>
+					<td class='timestamp'>8:07:53 AM</td>
 					<td class='step-details'>LoggedIn successfully</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:27:40 AM</td>
+					<td class='timestamp'>8:07:53 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -218,22 +291,22 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>verifySupplierDueAmount</span>
-						<span class='test-time'>3 Apr, 2023 7:27:40 AM</span>
+						<span class='test-name'>verifyAddingNewExpenses</span>
+						<span class='test-time'>4 Apr, 2023 8:07:53 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>3 Apr, 2023 7:27:40 AM</span>
-	<span class='label end-time'>3 Apr, 2023 7:29:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 34s+264ms</span>
+	<span class='label start-time'>4 Apr, 2023 8:07:53 AM</span>
+	<span class='label end-time'>4 Apr, 2023 8:08:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+334ms</span>
 </div>
-	<div class='test-desc'>Verify supplier due amount is listed same in Balance Sheet and Trial Balance </div>
+	<div class='test-desc'>Verify newly added expense is listed </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>regression</span>
+				<span class='category label white-text'>smoke</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -248,12 +321,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:15 AM</td>
-					<td class='step-details'>New Role is deleted successfully</td>
+					<td class='timestamp'>8:08:10 AM</td>
+					<td class='step-details'>Expense added successfully</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:15 AM</td>
+					<td class='timestamp'>8:08:10 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -263,107 +336,24 @@
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>verifySupplierPurchaseAmount</span>
-						<span class='test-time'>3 Apr, 2023 7:27:40 AM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>3 Apr, 2023 7:27:40 AM</span>
-	<span class='label end-time'>3 Apr, 2023 7:29:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 34s+256ms</span>
-</div>
-	<div class='test-desc'>Verify the displayed total purchase amount when all locations is selected </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>7:29:10 AM</td>
-					<td class='step-details'>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='sell_minus_purchase text-danger']' (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.QaLegendBilling.Utilities.WaitUtilities.waitForElementTobeVisible(WaitUtilities.java:30)
-	at com.QaLegendBilling.Pages.ReportsPage.verifyPurchaseAmount(ReportsPage.java:67)
-	at com.QaLegendBilling.Scripts.ReportsPageTest.verifySupplierPurchaseAmount(ReportsPageTest.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='sell_minus_purchase text-danger']"}
-  (Session info: MicrosoftEdge=111.0.1661.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-VG7FOF4', ip: '192.168.18.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0bc1bbda95a018ddd9fd2e263a61ca75, findElement {using=xpath, value=//span[@class='sell_minus_purchase text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:5008}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\ASUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5008/devtool..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 18 more</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLinkAccountAgainstPaymentRefNumber</span>
-						<span class='test-time'>3 Apr, 2023 7:28:15 AM</span>
+						<span class='test-name'>verifyPaginationWhenNewExpenseIsAdded</span>
+						<span class='test-time'>4 Apr, 2023 8:08:10 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>3 Apr, 2023 7:28:15 AM</span>
-	<span class='label end-time'>3 Apr, 2023 7:29:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 59s+200ms</span>
+	<span class='label start-time'>4 Apr, 2023 8:08:10 AM</span>
+	<span class='label end-time'>4 Apr, 2023 8:08:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+119ms</span>
 </div>
-	<div class='test-desc'>Verify Link Account functionality against Payment Ref Number in Payment Account Report </div>
+	<div class='test-desc'>Verify newly added expense is listed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -376,7 +366,12 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:32 AM</td>
+					<td class='timestamp'>8:08:11 AM</td>
+					<td class='step-details'>Expense listed successfully</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:08:11 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -386,60 +381,24 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 				</li>
 				
 				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='6'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
-						<span class='test-name'>verifySupplierDueAmount</span>
-						<span class='test-time'>3 Apr, 2023 7:29:10 AM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-name'>verifyExpenseCategoryUpdation</span>
+						<span class='test-time'>4 Apr, 2023 8:08:11 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>3 Apr, 2023 7:29:10 AM</span>
-	<span class='label end-time'>3 Apr, 2023 7:29:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+464ms</span>
+	<span class='label start-time'>4 Apr, 2023 8:08:11 AM</span>
+	<span class='label end-time'>4 Apr, 2023 8:08:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+260ms</span>
 </div>
-	<div class='test-desc'>Verify the displayed total due amount when all locations is selected </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>7:29:10 AM</td>
-					<td class='step-details'>java.lang.Throwable: Method ReportsPageTest.verifySupplierDueAmount()[pri:18, instance:com.QaLegendBilling.Scripts.ReportsPageTest@55ca8de8] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)</td>
-				</tr>
-			</tbody>
-		</table>
+	<div class='test-desc'>Verify the expense category is updated successfully </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
 	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>verifySupplierPurchaseAmountDemo</span>
-						<span class='test-time'>3 Apr, 2023 7:29:10 AM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>3 Apr, 2023 7:29:10 AM</span>
-	<span class='label end-time'>3 Apr, 2023 7:29:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+392ms</span>
-</div>
-	<div class='test-desc'>Verify the displayed total purchase amount when demo location is selected </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -450,57 +409,15 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>7:29:10 AM</td>
-					<td class='step-details'>java.lang.Throwable: Method ReportsPageTest.verifySupplierPurchaseAmountDemo()[pri:19, instance:com.QaLegendBilling.Scripts.ReportsPageTest@55ca8de8] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:08:22 AM</td>
+					<td class='step-details'>Expense Category Code is updated successfully</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>verifySupplierDueAmountDemo</span>
-						<span class='test-time'>3 Apr, 2023 7:29:10 AM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>3 Apr, 2023 7:29:10 AM</span>
-	<span class='label end-time'>3 Apr, 2023 7:29:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+227ms</span>
-</div>
-	<div class='test-desc'>Verify the displayed total due amount when demo location is selected </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>7:29:10 AM</td>
-					<td class='step-details'>java.lang.Throwable: Method ReportsPageTest.verifySupplierDueAmountDemo()[pri:20, instance:com.QaLegendBilling.Scripts.ReportsPageTest@55ca8de8] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:08:22 AM</td>
+					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
 		</table>
@@ -540,10 +457,10 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>4</span> test(s) passed</span>
+					<span><span class='strong'>7</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>1</span> test(s) failed, <span class='strong'>3</span> others
+					<span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -555,10 +472,10 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>7</span> step(s) passed</span>
+					<span><span class='strong'>14</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>1</span> step(s) failed, <span class='strong'>3</span> others
+					<span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -595,12 +512,12 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 					<div class='category-heading'>
 						<span class='category-name'>smoke</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
+							<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
 							
 							
 						</div>
@@ -616,47 +533,23 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 								</thead>
 								<tbody>
 									<tr>
-										<td>3 Apr, 2023 7:26:49 AM</td>
-										<td class='linked' test-id='1'>verifyLoginValidUserValidPassword</td>
+										<td>4 Apr, 2023 8:07:45 AM</td>
+										<td class='linked' test-id='4'>verifyLoginValidUserValidPassword</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>3 Apr, 2023 7:26:49 AM</td>
-										<td class='linked' test-id='2'>verifyLoginValidUserValidPassword</td>
+										<td>4 Apr, 2023 8:07:53 AM</td>
+										<td class='linked' test-id='5'>verifyAddingNewExpenses</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>regression</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
 									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
+										<td>4 Apr, 2023 8:08:10 AM</td>
+										<td class='linked' test-id='6'>verifyPaginationWhenNewExpenseIsAdded</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</thead>
-								<tbody>
 									<tr>
-										<td>3 Apr, 2023 7:27:40 AM</td>
-										<td class='linked' test-id='3'>verifySupplierDueAmount</td>
+										<td>4 Apr, 2023 8:08:11 AM</td>
+										<td class='linked' test-id='7'>verifyExpenseCategoryUpdation</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -675,179 +568,7 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-					<i class='material-icons'>search</i> Search
-				</a>
-				
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-				
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-
-	<div class='subview-left left'>
-		
-		<div class='view-summary'>
-			<h5>Exceptions</h5>
-			<ul id='exception-collection' class='exception-collection'>
-				
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>	
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>3 Apr, 2023 7:27:40 AM</td>
-										<td class='linked' test-id='4'>verifySupplierPurchaseAmount</td>
-										<td><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='sell_minus_purchase text-danger']' (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.QaLegendBilling.Utilities.WaitUtilities.waitForElementTobeVisible(WaitUtilities.java:30)
-	at com.QaLegendBilling.Pages.ReportsPage.verifyPurchaseAmount(ReportsPage.java:67)
-	at com.QaLegendBilling.Scripts.ReportsPageTest.verifySupplierPurchaseAmount(ReportsPageTest.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='sell_minus_purchase text-danger']"}
-  (Session info: MicrosoftEdge=111.0.1661.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-VG7FOF4', ip: '192.168.18.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0bc1bbda95a018ddd9fd2e263a61ca75, findElement {using=xpath, value=//span[@class='sell_minus_purchase text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:5008}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\ASUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5008/devtool..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 18 more
-</pre></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.Throwable</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
-					</div>
-					<div class='exception-content hide'>	
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>3 Apr, 2023 7:29:10 AM</td>
-										<td class='linked' test-id='6'>verifySupplierDueAmount</td>
-										<td><pre>java.lang.Throwable: Method ReportsPageTest.verifySupplierDueAmount()[pri:18, instance:com.QaLegendBilling.Scripts.ReportsPageTest@55ca8de8] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></td>
-									</tr>
-									<tr>
-										<td>3 Apr, 2023 7:29:10 AM</td>
-										<td class='linked' test-id='7'>verifySupplierPurchaseAmountDemo</td>
-										<td><pre>java.lang.Throwable: Method ReportsPageTest.verifySupplierDueAmount()[pri:18, instance:com.QaLegendBilling.Scripts.ReportsPageTest@55ca8de8] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></td>
-									</tr>
-									<tr>
-										<td>3 Apr, 2023 7:29:10 AM</td>
-										<td class='linked' test-id='8'>verifySupplierDueAmountDemo</td>
-										<td><pre>java.lang.Throwable: Method ReportsPageTest.verifySupplierDueAmount()[pri:18, instance:com.QaLegendBilling.Scripts.ReportsPageTest@55ca8de8] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -855,31 +576,31 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>14</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>3 Apr, 2023 7:25:29 AM</div>
+					<div class='panel-lead'>4 Apr, 2023 8:07:05 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>3 Apr, 2023 7:29:14 AM</div>
+			 		<div class='panel-lead'>4 Apr, 2023 8:08:23 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>224,697ms</div>
+					<div class='panel-lead'>77,405ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -923,13 +644,7 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 						</tr>
 						<tr>
 							<td>smoke</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>regression</td>
-							<td>1</td>
+							<td>4</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
@@ -945,20 +660,20 @@ Session ID: 0bc1bbda95a018ddd9fd2e263a61ca75
 
 		<script>
 			var statusGroup = {
-				passParent: 4,
-				failParent: 1,
+				passParent: 7,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 3,
+				skipParent: 0,
 				unknownParent: 0,
 				
-				passChild: 7,
-				failChild: 1,
+				passChild: 14,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 3,
+				skipChild: 0,
 				unknownChild: 0,
 				infoChild: 0,
 				

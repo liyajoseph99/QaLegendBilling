@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.QaLegendBilling.Base.TestBase;
-import com.QaLegendBilling.Base.TestBase;
 import com.QaLegendBilling.Constants.Constants;
 import com.QaLegendBilling.Constants.ExtentLogMessage;
 import com.QaLegendBilling.DataProvider.DataProviders;
@@ -14,7 +13,7 @@ import com.QaLegendBilling.Pages.LoginPage;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class ExpensePageTest extends LoginTest{
+public class ExpensePageTest extends TestBase{
 	
 	ExpensesPage objExpenses;
 	ThreadLocal<ExtentTest> extentTest = TestListner.getTestInstance();

@@ -11,7 +11,7 @@
     </classes>
   </test> <!-- Test -->
   <test thread-count="5" name="TestUsingFirefoxBrowser">
-	<parameter name="browser" value="gecko"></parameter>
+	<parameter name="browser" value="FireFox"></parameter>
     <classes>
 	  <class name="com.QaLegendBilling.Scripts.ExpensePageTest"/>
     </classes>

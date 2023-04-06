@@ -32,7 +32,8 @@ import org.testng.annotations.BeforeMethod;
 public class TestBase {
 	
 	public static Properties prop=null;
-	public  WebDriver driver;
+	public static WebDriver driver;
+	//public  WebDriver driver;
   
   public void testBase() {
 	  
@@ -53,42 +54,44 @@ public class TestBase {
   }
   
   
-  @BeforeClass(groups = {"smoke"})
+  @BeforeTest(groups = {"smoke"})
   @Parameters({"browser"})
   public void setUp(String browser1) {
 	  
 	  testBase();    																				
 	  
-	  if(browser1.equalsIgnoreCase("edge")) {	
-		 // WebDriverManager.edgedriver().setup();
-		 // driver=new EdgeDriver();
-		  DriverFactory.getInstance().setDriver(browser1);
-		  driver=DriverFactory.getInstance().getDriver();
-		  System.out.println("in before test:"+driver);
-		  System.out.println("in before test:"+Thread.currentThread().getId());  
 
+	  if(browser1.equalsIgnoreCase("edge")) {														
+		  WebDriverManager.edgedriver().setup();
+		  driver=new EdgeDriver();
 	  }
 	  else if(browser1.equalsIgnoreCase("chrome")) {														
 		  WebDriverManager.chromedriver().setup();
 		  driver=new ChromeDriver();
 	  }
 	  
-	  else if(browser1.equalsIgnoreCase("gecko")) {														
+	  else if(browser1.equalsIgnoreCase("FireFox")) {														
 		 System.setProperty(Constants.GECKOWEBDRIVER, Constants.GECKODRIVERPATH);
 		  driver=new FirefoxDriver();
 	  }
+	  
+ 	//  DriverFactory.getInstance().setDriver(browser1);
+	//  driver=DriverFactory.getInstance().getDriver();
+	//  System.out.println("in before test:"+driver);
+	//  System.out.println("in before test:"+Thread.currentThread().getId());  
+	  
 	  String baseUrl=prop.getProperty("url");
-	  System.out.println("in before test-before url:"+driver);
-	  driver.get(baseUrl);
-	  System.out.println("in before test-after url:"+driver);
+	//  System.out.println("in before test-before url:"+driver);
+	//  driver.get(baseUrl);
+	//  System.out.println("in before test-after url:"+driver);
 	  driver.manage().window().maximize();
 	  WaitUtilities.implicitWait(driver);
+	  driver.get(baseUrl);
   }
 
-  @AfterClass
+  @AfterTest
   public void tearDown() {
-	  DriverFactory.getInstance().closeBrowser();
-	  System.out.println("in after test:"+Thread.currentThread().getId());
+	 // DriverFactory.getInstance().closeBrowser();
   }
 
 }
